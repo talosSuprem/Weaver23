@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:context=".SocialUsersFragment">
+
+   <com.google.android.material.appbar.AppBarLayout
+       android:layout_width="match_parent"
+       android:layout_height="wrap_content"
+       android:id="@+id/appBar1"
+       >
+
+      <androidx.appcompat.widget.Toolbar
+          android:id="@+id/toolbar1"
+          android:layout_width="match_parent"
+          android:layout_height="wrap_content"
+          app:menu="@menu/menu_social"
+         >
+
+
+      </androidx.appcompat.widget.Toolbar>
+
+
+
+
+   </com.google.android.material.appbar.AppBarLayout>
+
+
+
+
+   <androidx.recyclerview.widget.RecyclerView
+
+       android:layout_marginTop="55dp"
+
+       android:id="@+id/users_recyclerView"
+       android:layout_width="match_parent"
+
+       android:layout_height="match_parent"/>
+
+</RelativeLayout>
