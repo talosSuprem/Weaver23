@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/cust_infocase4">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Weaver"
+        android:textColor="@color/black"
+        android:layout_marginTop="18dp"
+        android:textStyle="italic"
+        android:textSize="18dp"
+        android:layout_marginLeft="18dp"
+        android:id="@+id/weaver"
+        />
+
+    <de.hdodenhof.circleimageview.CircleImageView
+        android:layout_below="@+id/weaver"
+        android:id="@+id/image_profile"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:layout_marginLeft="16dp"
+        android:layout_marginTop="16dp"
+         />
+
+    <TextView
+        android:id="@+id/name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+
+        android:layout_below="@id/image_profile"
+        android:textColor="@color/colorBlack"
+        android:layout_marginTop="10dp"
+        android:textStyle="bold"
+        android:textSize="16dp"
+        android:layout_marginLeft="16dp"/>
+
+    <TextView
+
+        android:id="@+id/username_to_nav"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+
+        android:layout_below="@id/name"
+        android:textColor="@color/colorBlack"
+        android:textSize="12dp"
+        android:layout_marginLeft="16dp"/>
+
+
+
+
+
+
+
+    <View
+        android:layout_below="@+id/username_to_nav"
+
+        android:layout_width="match_parent"
+        android:background="@color/ic_launcher_background"
+        style="@style/line"/>
+
+</RelativeLayout>

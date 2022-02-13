@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:id="@+id/llk"
+    android:layout_marginTop="20dp"
+    android:background="@drawable/cust_infocase"
+    android:orientation="vertical"
+    android:gravity="center"
+    android:backgroundTintMode="screen"
+    android:layout_gravity="center">
+
+        <TextView
+            android:layout_width="152dp"
+            android:layout_height="29dp"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentEnd="true"
+            android:layout_marginStart="99dp"
+            android:layout_marginEnd="99dp"
+            android:text="What's WeaverCoin1.0"
+            android:textSize="15sp"
+            android:textStyle="bold"/>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:orientation="vertical"
+            android:layout_height="match_parent">
+            <TextView
+                android:layout_marginTop="20dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:background="@drawable/cust_infocase"
+
+                android:text="WeaverCoin1.0 est une crypto-monnaie qui ne dépend d'aucune bloc chaine.  "/>
+            <TextView
+                android:layout_marginTop="20dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:background="@drawable/cust_infocase"
+
+                android:text="les algorithmes de valorisations sont modifier chaque à mise à jour par des IA dont l'objectif est de réguler la valeur des jetons"/>
+            <TextView
+                android:layout_marginTop="20dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@drawable/cust_infocase"
+                android:gravity="center"
+                android:text="Vous devez d'abord réunir les conditions nécessaire comme avoir au moins 100 abonnées et avoir au moins 10€ dans votre partefeuil"/>
+            <TextView
+                android:layout_marginTop="20dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@drawable/cust_infocase"
+                android:gravity="center"
+                android:text="WeaverCoin1.0 prend de la valeur chaque jours et vous pourrez échanger vos crypto générer dans votre portefeuille en virement paypal"/>
+            <TextView
+                android:layout_marginTop="20dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:background="@drawable/cust_infocase"
+
+                android:text="Partager l'application à votre entourage pour gagner les des points supplémentaire."/>
+            <TextView
+                android:layout_marginTop="20dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:background="@drawable/cust_infocase"
+
+                android:text="Pour générer plus de points vous devez publier du contenu et obtenir des points positif"/>
+            <TextView
+                android:layout_marginTop="20dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:background="@drawable/cust_infocase"
+
+                android:text="Attention si vos publications sont de mauvaise qualité les utilisateur pourront vous attriber un mauvais point qui fera perdre de la valeur à votre partefeuil"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp"
+                android:background="@drawable/cust_infocase"
+                android:gravity="center"
+                android:layout_marginBottom="20dp"
+
+                android:text="Seul une utilisation dans respect des régles de cobweb permettra la valorisation de la monnaie virtuelle " />
+        </LinearLayout>
+
+
+
+
+
+</LinearLayout>

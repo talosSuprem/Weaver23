@@ -73,14 +73,6 @@ public class SocialUsersFragment extends Fragment {
         recyclerView = view.findViewById(R.id.users_recyclerView);
 
         toolbar = view.findViewById(R.id.toolbar1);
-
-
-
-
-
-
-
-
         appBarLayout = view.findViewById(R.id.appBar);
 
 
@@ -233,7 +225,6 @@ public class SocialUsersFragment extends Fragment {
 
        super.onCreateOptionsMenu(menu, inflater);
     }
-
 
 
     @Override

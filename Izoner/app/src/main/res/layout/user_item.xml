@@ -1,0 +1,102 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:padding="8dp"
+    android:background="@color/colorWhite"
+
+    android:layout_height="wrap_content">
+
+    <de.hdodenhof.circleimageview.CircleImageView
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:id="@+id/image_profile"
+        android:src="@mipmap/ic_launcher"/>
+
+    <LinearLayout
+        android:id="@+id/nameuser"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_toRightOf="@id/image_profile"
+        android:layout_toEndOf="@id/image_profile"
+        android:layout_marginLeft="5dp"
+        android:layout_centerVertical="true"
+        android:orientation="vertical"
+        android:layout_marginStart="5dp">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="username"
+            android:id="@+id/username"
+            android:textSize="12sp"
+            android:maxLines="1"
+            android:textStyle="bold"
+            android:textColor="@color/black"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/fullname"
+            android:visibility="invisible"
+            android:textSize="12sp"
+            android:maxLines="1"
+            android:text="Full Name"/>
+
+</LinearLayout>
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignEnd="@+id/nameuser"
+        android:layout_marginStart="-24dp"
+        android:layout_toEndOf="@+id/nameuser">
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:minWidth="52dp"
+        android:layout_width="wrap_content"
+        android:layout_height="27dp"
+        android:layout_alignParentTop="true"
+
+        android:layout_alignParentEnd="true"
+
+
+        android:layout_marginStart="31dp"
+        android:layout_marginLeft="150dp"
+        android:layout_marginTop="11dp"
+        android:layout_marginEnd="100dp"
+        android:background="@drawable/cust_infocase3"
+
+
+        android:gravity="center">
+
+        <TextView
+            android:id="@+id/userLevel"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+
+            android:gravity="center"
+            android:text="0"
+
+            android:textColor="@color/black"
+            android:textSize="15sp" />
+
+
+    </LinearLayout>
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="30dp"
+        android:background="@drawable/cust_compter"
+        android:visibility="gone"
+        android:id="@+id/btn_follow"
+        android:textSize="12sp"
+        android:textColor="@color/colorBlack"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentRight="true"
+        android:layout_centerVertical="true"/>
+
+
+</RelativeLayout>

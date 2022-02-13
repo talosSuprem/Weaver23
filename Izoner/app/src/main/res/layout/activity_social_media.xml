@@ -21,9 +21,10 @@
             <ImageView
 
                 android:id="@+id/returnhomeicon"
-                android:layout_width="40dp"
-                android:layout_height="40dp"
+                android:layout_width="35dp"
+                android:layout_height="35dp"
                 android:adjustViewBounds="true"
+                android:layout_marginRight="12dp"
                 android:src="@drawable/ic_round_arrow_back_ios_new_24"
                 android:contentDescription="TODO" />
 
@@ -41,6 +42,26 @@
                 android:textColor="?attr/tc"
                 android:textStyle="bold"
                 android:layout_marginStart="25dp" />
+
+            <LinearLayout
+
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@drawable/cust_infocase">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="SCORE: "
+                    android:textColor="@color/colorBlack" />
+
+                <TextView
+                    android:id="@+id/cScore"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="10"
+                    android:textColor="@color/colorBlack" />
+            </LinearLayout>
 
         </androidx.appcompat.widget.Toolbar>
 

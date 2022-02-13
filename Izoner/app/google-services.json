@@ -1,0 +1,47 @@
+{
+  "project_info": {
+    "project_number": "77585142121",
+    "project_id": "weaver1-4ee9a",
+    "storage_bucket": "weaver1-4ee9a.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:77585142121:android:0e6f21c892f1e1ef386df8",
+        "android_client_info": {
+          "package_name": "com.talos.weaver"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "77585142121-dagb9upuod8n6b80i9gqk0b0pl45r6kh.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.talos.weaver",
+            "certificate_hash": "81a58a55f1bd661d9bf71b4590a62470d8bfd246"
+          }
+        },
+        {
+          "client_id": "77585142121-6v4b30hr2ehubugmo66ls6bn4rjhii40.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBpJSsZ8K4skbpMS5So3saFlt7A4JNQJ88"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "77585142121-6v4b30hr2ehubugmo66ls6bn4rjhii40.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

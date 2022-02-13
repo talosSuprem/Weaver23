@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+
+
+
+    <item android:title="Your Activities">
+        <menu>
+
+            <item
+                android:id="@+id/nav_message"
+                android:icon="@drawable/ic_poster"
+                android:title="Chat" />
+            <item
+                android:id="@+id/shorts"
+                android:visible="false"
+                android:icon="@drawable/ic_cryptube_icon"
+                android:title="Shorts" />
+            <item
+                android:id="@+id/cryptube"
+                android:visible="false"
+                android:icon="@drawable/ic_cryptube_icon"
+                android:title="CobTube" />
+            <item
+                android:id="@+id/news"
+                android:icon="@drawable/ic_round_newspaper_24"
+                android:title="News"/>
+
+
+            <item
+                android:id="@+id/trash"
+                android:icon="@mipmap/ic_launcher_foreground"
+                android:title="CobCoin" />
+
+
+
+        </menu>
+    </item>
+
+
+
+
+    <item android:title="Profile">
+        <menu>
+
+            <item
+                android:id="@+id/settings"
+                android:icon="@drawable/ic_outline_settings"
+                android:title="Settings" />
+            <item
+                android:id="@+id/nav_login"
+                android:icon="@drawable/ic_logout"
+                android:title="Logout" />
+        </menu>
+    </item>
+
+    <item android:title="Communicate">
+        <menu>
+            <item
+                android:id="@+id/nav_cgu"
+                android:icon="@drawable/ic_baseline_rule_24"
+                android:title="Rules and terms of use" />
+            <item
+                android:id="@+id/nav_share"
+                android:icon="@drawable/ic_share"
+                android:title="Share app and get rewards" />
+
+        </menu>
+    </item>
+</menu>

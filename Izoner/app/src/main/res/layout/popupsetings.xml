@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:id="@+id/llk"
+    android:layout_marginTop="20dp"
+    android:background="@drawable/cust_infocase"
+    android:orientation="vertical"
+    android:gravity="center"
+    android:backgroundTintMode="screen"
+    android:layout_gravity="center">
+
+        <TextView
+            android:layout_width="152dp"
+            android:layout_height="29dp"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentEnd="true"
+            android:layout_marginStart="99dp"
+            android:layout_marginEnd="99dp"
+            android:text="What's Cobcoin1.0"
+            android:textSize="15sp"
+            android:textStyle="bold"/>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:orientation="vertical"
+            android:layout_height="match_parent">
+            <TextView
+                android:layout_marginTop="30dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:background="@drawable/cust_infocase"
+
+                android:text="Cobcoin1.0 est une crypto-monnaie qui ne dépend d'aucune bloc chaine.  "/>
+            <TextView
+                android:layout_marginTop="50dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:background="@drawable/cust_infocase"
+
+                android:text="les algorithmes de valorisations sont modifier chaque à mise à jour par des IA dont l'objectif est de réguler va la valeur des jetons"/>
+            <TextView
+                android:layout_marginTop="40dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@drawable/cust_infocase"
+                android:gravity="center"
+                android:text="Cobcoin1.0 prend de la valeur chaque jours vous pourrez par la suite échanger vos crypto générer dans votre portefeuille en virement paypal"/>
+            <TextView
+                android:layout_marginTop="50dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:background="@drawable/cust_infocase"
+
+                android:text="Partager l'application à votre entourage pour gagner les des points supplémentaire."/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="40dp"
+                android:background="@drawable/cust_infocase"
+                android:gravity="center"
+                android:paddingBottom="50dp"
+
+                android:text="Seul une utilisation dans respect des régles de cobweb permettra la valorisation de la monnaie virtuelle " />
+        </LinearLayout>
+
+
+
+
+
+</LinearLayout>

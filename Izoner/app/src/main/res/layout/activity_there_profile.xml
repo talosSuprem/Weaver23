@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+
+    tools:context=".ThereProfileActivity">
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="180dp"
+            android:background="@color/ic_launcher_background">
+
+
+
+
+        </RelativeLayout>
+        <LinearLayout
+            android:id="@+id/linearLayout"
+            android:layout_width="match_parent"
+            android:layout_height="120dp"
+            android:layout_marginTop="100dp"
+            android:orientation="horizontal">
+
+
+            <com.mikhaellopez.circularimageview.CircularImageView
+                android:id="@+id/avatarIv"
+                android:layout_width="120dp"
+                android:layout_height="120dp"
+                android:padding="5dp"
+                android:src="@drawable/ic_add"
+                android:background="@color/ic_launcher_background"
+
+
+                android:layout_marginStart="20dp"
+                android:layout_marginLeft="20dp"
+                />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+                <TextView
+                    android:id="@+id/nameTV"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="5dp"
+                    android:textSize="20dp"
+
+                    android:textColor="@color/colorWhite"
+                    android:layout_marginLeft="5dp"/>
+                <TextView
+                    android:id="@+id/textTv"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="5dp"
+
+                    android:textColor="@color/colorWhite"
+                    android:layout_marginLeft="5dp"/>
+
+
+
+            </LinearLayout>
+        </LinearLayout>
+
+
+        <EditText
+            android:id="@+id/search"
+            android:drawableLeft="@drawable/ic_search"
+            android:layout_width="match_parent"
+            android:hint="Searsh..."
+            android:layout_height="wrap_content"
+            android:layout_below="@id/linearLayout"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginRight="10dp"
+            android:layout_marginBottom="10dp"
+            android:background="@drawable/cust_infocase" />
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/recyclerview_posts"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+
+            android:layout_below="@+id/search"/>
+
+
+    </RelativeLayout>
+
+
+</ScrollView>

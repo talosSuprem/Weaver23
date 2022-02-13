@@ -4,17 +4,20 @@ import com.google.firebase.firestore.PropertyName;
 
 
 public class ModelChat {
-    String message,receiver,sender,timestamp;
+    String message,receiver,sender,timestamp ,type;
+    int cSore;
     boolean isSeen;
 
     public ModelChat() {
     }
 
-    public ModelChat(String message, String receiver, String sender, String timestamp, boolean isSeen) {
+    public ModelChat(String message, String receiver, String sender, String timestamp, String type, int cSore, boolean isSeen) {
         this.message = message;
         this.receiver = receiver;
         this.sender = sender;
         this.timestamp = timestamp;
+        this.type = type;
+        this.cSore = cSore;
         this.isSeen = isSeen;
     }
 
@@ -49,11 +52,27 @@ public class ModelChat {
     public void setTimestamp(String timestamp) {
         this.timestamp = timestamp;
     }
-    @PropertyName("isSeen")
+
+    public String getType() {
+        return type;
+    }
+
+    public void setType(String type) {
+        this.type = type;
+    }
+
+    public int getcSore() {
+        return cSore;
+    }
+
+    public void setcSore(int cSore) {
+        this.cSore = cSore;
+    }
+
     public boolean isSeen() {
         return isSeen;
     }
-    @PropertyName("isSeen")
+
     public void setSeen(boolean seen) {
         isSeen = seen;
     }

@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">Weaver</string>
+    <string name="new_post">Nouveau post</string>
+    <string name="edit_your_profile">Editer votre profil</string>
+    <string name="log_in">Connection</string>
+    <string name="register">enregistrer</string>
+    <string name="reset">Envoyer</string>
+    <string name="by_clicking_reset_you_will_receive_an_email_to_reset_you_password">Vous allez recevoir un nouveau mot de passe par mail .</string>
+    <string name="your_email">Votre Email</string>
+    <string name="username">Pseudo</string>
+    <string name="full_name">Nom Prenom</string>
+    <string name="password">mot de passe</string>
+    <string name="already_have_an_sccount_log_in">vous avez déjà un compte ? Connectez-vous</string>
+    <string name="don_t_have_an_sccount_sign_up">Vous n\'avez pas de compte ? Inscrivez-vous</string>
+    <string name="did_you_forgot_your_password">Avez vous oublié votre mot de passe ?</string>
+    <string name="lock_options">Bloquer votre compte</string>
+    <string name="log_out">deconnection</string>
+    <string name="followers">Abonnés</string>
+    <string name="following">Abonnement</string>
+    <string name="posts">publications</string>
+</resources>

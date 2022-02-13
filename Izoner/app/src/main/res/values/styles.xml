@@ -1,0 +1,48 @@
+<resources>
+
+    <!-- Base application theme. -->
+    <style name="AppTheme" parent="Theme.AppCompat.Light.NoActionBar">
+
+        <item name="colorPrimary">@color/colorWhite</item>
+        <item name="colorPrimaryDark">@color/ic_launcher_background</item>
+        <item name="colorAccent">#454142</item>
+        <item name="bgc">@color/colorWhite</item>
+        <item name="tc">@color/black</item>
+    </style>
+    <style name="DarkTheme" parent="Theme.AppCompat.Light.NoActionBar">
+
+        <item name="colorPrimary">@color/colorWhite</item>
+        <item name="colorPrimaryDark">@color/black</item>
+        <item name="colorAccent">#454142</item>
+        <item name="bgc">@color/black</item>
+        <item name="tc">@color/colorWhite</item>
+    </style>
+
+    <style name="MenuStyle" parent="Theme.AppCompat.Light">
+        <item name="android:background">@android:color/white</item>
+    </style>
+
+    <style name="LabelStyle">
+        <item name="android:background">@drawable/bg_label</item>
+        <item name="android:textColor">#fff</item>
+
+
+    </style>
+
+
+
+    <style name="line">
+        <item name="android:background">#333333</item>
+        <item name="android:layout_marginTop">10dp</item>
+        <item name="android:layout_height">1dp</item>
+    </style>
+    <style name="CircularDeterminateProgressBar">
+        <item name="android:indeterminateOnly">false</item>
+        <item name="android:progressDrawable">@drawable/circle</item>
+    </style>
+
+    <style name="Dashboard" parent="Theme.AppCompat.Light.NoActionBar">
+        <item name="iconTint">#FFFFFF</item>
+    </style>
+
+</resources>

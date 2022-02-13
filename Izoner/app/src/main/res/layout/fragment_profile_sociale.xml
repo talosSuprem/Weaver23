@@ -1,0 +1,186 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ProfileSocialeFragment">
+    <Button
+        android:id="@+id/fab"
+        android:drawableStart="@drawable/ic_edit_black_24dp"
+        android:layout_marginTop="18dp"
+        android:layout_marginLeft="120dp"
+        android:layout_width="wrap_content"
+
+        android:layout_height="28dp"
+        android:layout_alignParentEnd="true"
+        android:layout_marginRight="20dp"
+        android:background="@drawable/cust_infocase5"
+        android:text="edit"/>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+
+            <ImageView
+                android:id="@+id/coverIv"
+                android:layout_width="match_parent"
+                android:layout_height="180dp"
+                android:background="#A4A3A8">
+
+
+
+
+            </ImageView>
+
+            <LinearLayout
+                android:id="@+id/linearLayout"
+                android:layout_width="match_parent"
+                android:layout_height="145dp"
+                android:layout_marginTop="100dp"
+                android:orientation="horizontal">
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:id="@+id/levelTv"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:layout_marginLeft="12dp"
+
+
+                        android:textColor="@color/white" />
+
+                    <com.mikhaellopez.circularimageview.CircularImageView
+                        android:id="@+id/avatarIv"
+                        android:layout_width="118dp"
+                        android:layout_height="118dp"
+                        android:layout_marginStart="20dp"
+
+                        android:layout_marginLeft="20dp"
+                        android:background="@null"
+
+
+                        android:padding="5dp"
+                        android:src="@drawable/ic_person_24" />
+
+                </LinearLayout>
+
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:id="@+id/nameTV"
+
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="5dp"
+                        android:layout_marginLeft="5dp"
+
+                        android:textColor="@color/colorWhite"
+                        android:textSize="20dp" />
+
+                    <TextView
+                        android:id="@+id/textTv"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="5dp"
+
+                        android:layout_marginLeft="5dp"
+                        android:textColor="@color/colorWhite" />
+
+
+                </LinearLayout>
+
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_marginTop="18dp"
+                android:id="@+id/linearBio"
+                android:layout_below="@id/linearLayout"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+                <TextView
+                    android:drawableStart="@drawable/ic_twotone_book_24"
+                    android:layout_marginLeft="18dp"
+                    android:id="@+id/bioTv"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/linearLayout"
+                    android:text="Your bio: " />
+                <TextView
+                    android:id="@+id/bioTV"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    />
+
+
+            </LinearLayout>
+
+
+            <LinearLayout
+                android:layout_marginLeft="18dp"
+                android:layout_below="@id/linearBio"
+                android:id="@+id/joined"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+
+                >
+                <TextView
+                    android:drawableStart="@drawable/ic_twotone_date_range_24"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Join us : "/>
+                <TextView
+                    android:id="@+id/joinedTv"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/linearLayout"
+                    />
+
+            </LinearLayout>
+
+
+            <EditText
+                android:id="@+id/search"
+                android:drawableLeft="@drawable/ic_search"
+                android:layout_width="match_parent"
+                android:hint="Searsh..."
+                android:layout_height="wrap_content"
+                android:layout_below="@id/joined"
+                android:layout_marginLeft="10dp"
+                android:layout_marginTop="10dp"
+                android:layout_marginRight="10dp"
+                android:layout_marginBottom="10dp"
+                android:background="@drawable/cust_infocase" />
+
+            <androidx.recyclerview.widget.RecyclerView
+                android:id="@+id/recyclerview_posts"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/search"/>
+
+        </RelativeLayout>
+
+
+    </ScrollView>
+
+
+
+
+
+</RelativeLayout>

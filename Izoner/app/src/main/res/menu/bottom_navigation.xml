@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+
+
+    <item
+        android:id="@+id/nav_weave"
+        android:icon="@drawable/weavernft"
+        android:title="Weaves"/>
+
+    <item
+        android:id="@+id/nav_wallet"
+        android:icon="@drawable/ic_round_monetization_bar"
+        android:title="Wallets"
+        />
+    <item
+        android:id="@+id/nav_search"
+        android:icon="@drawable/ic_search"
+        android:title="search"/>
+    <item
+        android:id="@+id/nav_notification"
+        android:icon="@drawable/ic_fire"
+        android:title="Scrollers"/>
+
+    <item
+        android:id="@+id/nav_profile"
+        android:icon="@drawable/ic_profile"
+        android:title="Profile"/>
+
+
+</menu>

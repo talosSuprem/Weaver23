@@ -1,0 +1,157 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.drawerlayout.widget.DrawerLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:id="@+id/drawer_layout"
+    android:background="?attr/bgc"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:context=".Fragments.HomeFragment">
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+        <com.google.android.material.appbar.AppBarLayout
+            android:id="@+id/bar"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:background="?android:attr/windowBackground">
+
+
+                <com.google.android.material.appbar.MaterialToolbar
+                    android:id="@+id/topAppBar"
+
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+
+
+                    app:navigationIcon="@drawable/ic_menu_home"
+
+                    android:background="@color/colorWhite"
+                    >
+                    <ImageView
+
+                        android:id="@+id/messenger1"
+                        android:layout_width="30dp"
+                        android:layout_height="30dp"
+                        android:layout_gravity="right"
+                        android:layout_marginHorizontal="15dp"
+                        android:src="@drawable/ic_comment" />
+                    <ImageView
+                        android:id="@+id/notifIcon"
+                        android:layout_width="30dp"
+                        android:layout_height="30dp"
+
+                        android:layout_gravity="right"
+                        android:src="@drawable/ic_notifications_tube" />
+
+                </com.google.android.material.appbar.MaterialToolbar>
+
+
+
+
+        </com.google.android.material.appbar.AppBarLayout>
+
+
+
+        <androidx.core.widget.NestedScrollView
+            android:visibility="gone"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/bar">
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+
+                android:orientation="vertical">
+
+                <androidx.recyclerview.widget.RecyclerView
+                    android:id="@+id/recycler_view_story"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/bar"
+                    android:layout_marginLeft="3dp"
+                     />
+
+                <androidx.recyclerview.widget.RecyclerView
+                    android:id="@+id/recycler_view"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/recycler_view_story" />
+
+            </LinearLayout>
+
+
+
+        </androidx.core.widget.NestedScrollView>
+
+        <ProgressBar
+            android:id="@+id/progress_circular"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+
+            android:layout_centerInParent="true"/>
+
+
+        <com.getbase.floatingactionbutton.FloatingActionsMenu
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentTop="true"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentBottom="true"
+
+            android:layout_marginStart="-5dp"
+            android:layout_marginLeft="200dp"
+            android:layout_marginTop="195dp"
+            android:layout_marginEnd="26dp"
+            android:layout_marginBottom="38dp"
+            android:outlineSpotShadowColor="#CC0505"
+            android:paddingLeft="100dp"
+            app:fab_addButtonColorNormal="@color/colorWhite"
+            app:fab_addButtonPlusIconColor="@color/black"
+            app:fab_expandDirection="up"
+            app:fab_labelStyle="@style/LabelStyle"
+            app:fab_labelsPosition="left">
+
+
+            <com.getbase.floatingactionbutton.FloatingActionButton
+                android:id="@+id/togofoto"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                app:fab_colorNormal="#fff"
+                app:fab_icon="@drawable/ic_outline_photo_size_select_actual_24"
+                app:fab_size="mini"
+                app:fab_title="-100xp" />
+
+            <com.getbase.floatingactionbutton.FloatingActionButton
+                android:id="@+id/togowrite"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                app:fab_colorNormal="#fff"
+                app:fab_icon="@drawable/ic_video_camera"
+                app:fab_size="mini"
+                app:fab_title="-1xp/character" />
+
+
+        </com.getbase.floatingactionbutton.FloatingActionsMenu>
+
+
+    </RelativeLayout>
+
+
+    <com.google.android.material.navigation.NavigationView
+        android:id="@+id/navigation_view"
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:background="@drawable/cust_infocase"
+        android:layout_gravity="start"
+
+        app:headerLayout="@layout/nav_header"
+        app:menu="@menu/nav_home_menu"
+        android:visibility="visible"/>
+
+
+
+</androidx.drawerlayout.widget.DrawerLayout>

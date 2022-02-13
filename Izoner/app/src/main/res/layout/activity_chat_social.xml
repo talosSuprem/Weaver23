@@ -6,36 +6,39 @@
     android:layout_height="match_parent"
     tools:context=".ChatSocialActivity">
 
-
     <androidx.appcompat.widget.Toolbar
         android:id="@+id/toolbar"
         android:layout_width="match_parent"
         android:layout_height="@android:dimen/app_icon_size"
-        android:background="@color/ic_launcher_background"
+        android:background="@color/colorWhite"
         android:theme="@style/ThemeOverlay.AppCompat.Dark.ActionBar">
 
         <ImageView
             android:id="@+id/back"
             android:layout_width="30dp"
+            android:layout_marginStart="3dp"
             android:layout_height="30dp"
-            android:src="@drawable/ic_arrow_back"/>
+            android:layout_marginRight="12dp"
+            android:src="@drawable/ic_arrow_back" />
 
         <com.mikhaellopez.circularimageview.CircularImageView
             android:id="@+id/profileIv"
             android:layout_width="35dp"
             android:layout_height="35dp"
+            android:layout_marginLeft="18dp"
             android:scaleType="centerCrop"
             android:src="@drawable/ic_person_24"
-            android:layout_marginLeft="10dp"
 
             app:civ_background_color="@color/ic_launcher_background" />
 
         <LinearLayout
-            android:layout_width="match_parent"
+            android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_marginStart="20dp"
             android:layout_marginLeft="20dp"
             android:gravity="center"
+
+            android:minWidth="20dp"
             android:orientation="vertical">
 
             <TextView
@@ -43,7 +46,7 @@
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:text="his name"
-                android:textColor="@color/colorWhite"
+                android:textColor="@color/black"
                 android:textSize="18sp"
                 android:textStyle="bold" />
 
@@ -53,21 +56,45 @@
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:text="Online"
-                android:textColor="@color/colorWhite"
+                android:textColor="@color/colorSecondaryDark"
 
                 android:textSize="10sp"
                 android:textStyle="bold" />
+
+
         </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="end"
+            android:layout_marginEnd="20dp"
+            >
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="SCORE: "
+                android:textColor="@color/colorBlack" />
+
+            <TextView
+                android:id="@+id/cScore"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="10"
+                android:textColor="@color/colorBlack" />
+        </LinearLayout>
+
 
     </androidx.appcompat.widget.Toolbar>
 
 
     <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/chat_recyclerView"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:id="@+id/chat_recyclerView"
-        android:layout_below="@+id/toolbar"
-        android:layout_above="@+id/chatLayout"/>
+        android:layout_above="@+id/chatLayout"
+        android:layout_below="@+id/toolbar" />
 
     <LinearLayout
         android:id="@+id/chatLayout"
@@ -75,16 +102,27 @@
         android:layout_height="wrap_content"
         android:layout_alignParentBottom="true"
         android:orientation="horizontal"
+        android:layout_marginBottom="10dp"
         android:gravity="center">
+        <ImageButton
+            android:id="@+id/attachBtn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@null"
+            android:layout_marginLeft="4dp"
+            android:padding="3dp"
+            android:src="@drawable/ic_round_attach_file_24"/>
         <EditText
+            android:layout_marginLeft="5dp"
+            android:textColorLink="@color/colorBlack"
 
-            android:background="@drawable/cust_infocase"
+
             android:layout_weight="1"
-            android:hint="Start typing"
+            android:hint="@string/start_typing"
             android:inputType="textCapSentences|textMultiLine"
             android:layout_width="0dp"
             android:id="@+id/messageEt"
-            android:layout_height="wrap_content"
+            android:layout_height="48dp"
             android:padding="15dp"/>
 
         <ImageButton

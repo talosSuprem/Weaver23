@@ -1,0 +1,136 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="10dp"
+    android:gravity="center"
+    tools:context=".RegisterActivity">
+
+    <ImageView
+        android:id="@+id/logologin2"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:src="@mipmap/ic_launcher_foreground"
+        android:layout_marginBottom="10dp"
+        />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="30dp"
+        android:text="@string/app_name"
+        android:textColor="@color/colorBlack"
+        android:textSize="20sp"/>
+
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/cust_infocase"
+        android:hint="@string/username"
+        android:id="@+id/username"
+        android:maxLines="1"
+        android:layout_marginTop="15dp"
+        android:padding="10dp"/>
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/cust_infocase"
+        android:hint="@string/full_name"
+        android:id="@+id/fullname"
+        android:maxLines="1"
+        android:layout_marginTop="15dp"
+        android:padding="10dp"/>
+
+    <EditText
+        android:id="@+id/email"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="15dp"
+        android:background="@drawable/cust_infocase"
+        android:hint="@string/email"
+        android:maxLines="1"
+
+        android:inputType="textEmailAddress"
+        android:padding="10dp" />
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/cust_infocase"
+        android:hint="@string/password"
+        android:id="@+id/password"
+        android:maxLines="1"
+        android:inputType="textPassword"
+        android:layout_marginTop="15dp"
+        android:padding="10dp"/>
+
+    <TextView
+        android:layout_marginTop="10dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Rules of Weaver"
+        android:id="@+id/rules"
+        android:textColor="@color/blue"/>
+
+
+    <TextView
+        android:layout_marginTop="10dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:text="When you register in Weaver you became automaticly an acctinary"/>
+
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="15dp"
+        android:text="@string/register"
+        android:id="@+id/register"
+        android:textColor="@color/colorBlack"
+        android:background="@drawable/cust_compter"/>
+    <com.google.android.gms.common.SignInButton
+        android:layout_marginTop="10dp"
+        android:id="@+id/googleLoginBtn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@id/login">
+
+    </com.google.android.gms.common.SignInButton>
+
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/already_have_an_sccount_log_in"
+        android:id="@+id/txt_login"
+        android:layout_marginTop="10dp"/>
+
+
+
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="10dp">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="TALOS.ai"
+            android:textColor="@color/ic_launcher_background"
+            android:layout_marginTop="40dp"
+
+            />
+
+    </LinearLayout>
+
+</LinearLayout>
+
+
+
+
+

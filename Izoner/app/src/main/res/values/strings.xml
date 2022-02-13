@@ -1,0 +1,39 @@
+<resources>
+    <string name="app_name">Weaver</string>
+
+    <string name="hello_blank_fragment" translatable="false">Hello blank fragment</string>
+    <string name="new_post">New post</string>
+    <string name="followers">followers</string>
+    <string name="edit_your_profile">edit your profile</string>
+    <string name="log_in">Log in</string>
+    <string name="register">Register</string>
+    <string name="reset">Reset</string>
+    <string name="by_clicking_reset_you_will_receive_an_email_to_reset_you_password">By clicking RESET, you will receive an email to reset you password</string>
+    <string name="your_email">Your Email</string>
+    <string name="add_post">Add New Post</string>
+    <string name="username">Username</string>
+    <string name="full_name">Full name</string>
+    <string name="email" translatable="false">Email</string>
+    <string name="password">Password</string>
+
+    <string name="already_have_an_sccount_log_in">Already have an sccount? Log in</string>
+
+    <string name="don_t_have_an_sccount_sign_up">Don\'t have an sccount? Sign up</string>
+    <string name="did_you_forgot_your_password">Did you forgot your password ?</string>
+    <string name="create_a_new_account_for_google_tester_database_deleted" translatable="false">Create a new account for google tester(database deleted)</string>
+    <string name="lock_options">Lock options</string>
+    <string name="log_out">Log Out</string>
+    <string name="following">following</string>
+    <string name="posts">posts</string>
+    <string name="enter_title">Enter title</string>
+    <string name="enter_description">Enter description</string>
+    <string name="upload">Upload</string>
+    <string name="start_typing">Start typing</string>
+    <string name="comment">comment</string>
+    <string name="share">share</string>
+    <string name="like">Like</string>
+    <string name="dislike">disLike</string>
+    <string name="_11_likes">11 Likes</string>
+    <string name="description_of_the_post">Description of the post</string>
+
+</resources>

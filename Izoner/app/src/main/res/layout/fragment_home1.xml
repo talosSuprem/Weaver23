@@ -1,0 +1,190 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:context=".Fragments.Home1Fragment">
+
+
+    <RelativeLayout
+
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+
+        <androidx.drawerlayout.widget.DrawerLayout
+
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:id="@+id/drawer_layout">
+
+
+            <RelativeLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content">
+                <com.google.android.material.appbar.AppBarLayout
+                    android:id="@+id/bar"
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp"
+                    android:background="?android:attr/windowBackground">
+
+
+                    <com.google.android.material.appbar.MaterialToolbar
+                        android:id="@+id/topAppBar"
+
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+
+
+                        app:navigationIcon="@drawable/ic_menu_home"
+
+                        android:background="@color/colorWhite"
+                        >
+                        <ImageView
+
+                            android:id="@+id/messenger1"
+                            android:layout_width="30dp"
+                            android:layout_height="30dp"
+                            android:layout_gravity="right"
+                            android:layout_marginHorizontal="15dp"
+                            android:src="@drawable/ic_poster" />
+                        <ImageView
+                            android:id="@+id/notifIcon"
+                            android:layout_width="30dp"
+                            android:layout_height="30dp"
+                            android:visibility="gone"
+
+                            android:layout_gravity="right"
+                            android:src="@drawable/ic_twotone_notifications_none_24" />
+
+                    </com.google.android.material.appbar.MaterialToolbar>
+
+
+
+
+                </com.google.android.material.appbar.AppBarLayout>
+
+
+                <LinearLayout
+
+
+                    android:orientation="vertical"
+                    android:layout_width="match_parent"
+                    android:layout_marginTop="50dp"
+
+                    android:layout_height="wrap_content">
+
+
+                    <com.google.android.material.appbar.AppBarLayout
+
+                        android:id="@+id/appBarLayout2"
+                        android:layout_width="match_parent"
+                        android:layout_height="40dp"
+
+                        android:background="?attr/bgc"
+                        >
+
+                        <com.google.android.material.tabs.TabLayout
+                            android:id="@+id/tabLayout2"
+                            app:tabTextColor="@color/blue"
+                            app:tabIndicatorColor="@color/blue"
+                            android:layout_width="match_parent"
+                            android:layout_height="40dp">
+
+
+                        </com.google.android.material.tabs.TabLayout>
+
+
+
+
+
+                    </com.google.android.material.appbar.AppBarLayout>
+                    <androidx.viewpager.widget.ViewPager
+                        android:id="@+id/viewPager2"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"/>
+
+
+
+
+
+
+
+
+                </LinearLayout>
+
+
+                <com.getbase.floatingactionbutton.FloatingActionsMenu
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentStart="true"
+                    android:layout_alignParentTop="true"
+                    android:layout_alignParentEnd="true"
+                    android:layout_alignParentBottom="true"
+
+                    android:layout_marginStart="-5dp"
+                    android:layout_marginLeft="200dp"
+                    android:layout_marginTop="195dp"
+                    android:layout_marginEnd="26dp"
+                    android:layout_marginBottom="10dp"
+                    android:outlineSpotShadowColor="#CC0505"
+                    android:paddingLeft="100dp"
+                    app:fab_addButtonColorNormal="@color/colorWhite"
+                    app:fab_addButtonPlusIconColor="@color/black"
+                    app:fab_expandDirection="up"
+                    app:fab_labelStyle="@style/LabelStyle"
+                    app:fab_labelsPosition="left">
+
+
+                    <com.getbase.floatingactionbutton.FloatingActionButton
+                        android:id="@+id/togofoto"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        app:fab_colorNormal="#fff"
+                        app:fab_icon="@drawable/ic_outline_photo_size_select_actual_24"
+                        app:fab_size="mini"
+                        app:fab_title="Photo and text" />
+
+                    <com.getbase.floatingactionbutton.FloatingActionButton
+                        android:id="@+id/togowrite"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        app:fab_colorNormal="#fff"
+                        app:fab_icon="@drawable/ic_video_camera"
+                        app:fab_size="mini"
+                        app:fab_title="Video" />
+
+
+                </com.getbase.floatingactionbutton.FloatingActionsMenu>
+
+
+
+
+
+
+            </RelativeLayout>
+
+
+            <com.google.android.material.navigation.NavigationView
+                android:id="@+id/navigation_view"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:background="@drawable/cust_infocase"
+                android:layout_gravity="start"
+                app:headerLayout="@layout/nav_header"
+                app:menu="@menu/nav_home_menu"
+                android:visibility="visible"/>
+
+        </androidx.drawerlayout.widget.DrawerLayout>
+
+
+
+    </RelativeLayout>
+
+
+
+
+
+
+
+</RelativeLayout>
