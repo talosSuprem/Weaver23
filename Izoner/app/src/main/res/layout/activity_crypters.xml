@@ -13,6 +13,7 @@
 
         <androidx.appcompat.widget.Toolbar
             android:id="@+id/toolbar"
+            android:backgroundTint="@color/colorPrimary"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:background="?attr/bgc"
@@ -24,8 +25,9 @@
                 android:layout_width="30dp"
                 android:layout_height="30dp"
                 android:adjustViewBounds="true"
-                android:src="@drawable/ic_round_arrow_back_ios_new_24"
-                android:contentDescription="TODO" />
+                android:src="@drawable/ic_arrow_back"
+                android:contentDescription="TODO"
+                app:tint="@color/white" />
 
             <de.hdodenhof.circleimageview.CircleImageView
                 android:layout_width="30dp"
@@ -43,14 +45,15 @@
                 android:layout_marginStart="25dp" />
             <Button
                 android:id="@+id/createGroup"
-                android:background="@drawable/cust_infocase"
+                android:background="@drawable/button_background"
                 android:layout_width="wrap_content"
                 android:layout_height="20dp"
                 android:text="Create a groupe"
-                android:textColor="@color/blue"
+                android:textColor="@color/colorWhite"
                 android:textSize="10dp"
                 android:layout_marginEnd="1dp"
                 android:layout_gravity="end"
+                android:drawableTint="@color/white"
                 android:drawableStart="@drawable/ic_round_group_add_24"/>
 
         </androidx.appcompat.widget.Toolbar>

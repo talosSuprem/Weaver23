@@ -25,12 +25,14 @@
 
         android:layout_width="wrap_content"
         android:layout_height="30dp"
-        android:text="Welcome to Weaver"
+        android:text="Welcome to BlueSquare"
         android:textColor="@color/colorBlack"
         android:textSize="20sp"/>
 
 
     <Button
+        android:layout_marginRight="30dp"
+        android:layout_marginLeft="30dp"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_marginTop="15dp"
@@ -40,9 +42,12 @@
         android:background="@drawable/cust_compter"/>
 
     <Button
+
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_marginTop="15dp"
+        android:layout_marginRight="30dp"
+        android:layout_marginLeft="30dp"
         android:text="@string/register"
         android:id="@+id/register"
         android:textColor="@color/colorBlack"
@@ -50,6 +55,7 @@
 
     <com.google.android.gms.common.SignInButton
         android:layout_marginTop="10dp"
+        android:visibility="gone"
         android:id="@+id/googleLoginBtn"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
@@ -62,11 +68,13 @@
     <LinearLayout
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+
         android:layout_marginBottom="10dp">
         <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="TALOS.ai"
+            android:text="BlueSquare"
+
             android:textColor="@color/ic_launcher_background"
             android:layout_marginTop="40dp"
 

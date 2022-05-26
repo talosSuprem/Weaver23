@@ -52,6 +52,7 @@ public class AdapterUsers extends RecyclerView.Adapter<AdapterUsers.MyHolder> {
         String userImage = userList.get(i).getImageurl();
         String  userName = userList.get(i).getUsername();
         String userEmail = userList.get(i).getFullname();
+
         //String levelUser = String.valueOf(userList.get(i).getLevelUser());
 
         myHolder.mNameTv.setText(userName);
@@ -70,8 +71,11 @@ public class AdapterUsers extends RecyclerView.Adapter<AdapterUsers.MyHolder> {
         myHolder.itemView.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
+                Intent intent1 = new Intent(context, ThereProfileActivity.class);
+                intent1.putExtra("uid", hisUID);
+                context.startActivity(intent1);
 
-
+/**
                 AlertDialog.Builder builder = new AlertDialog.Builder(context);
                 builder.setItems(new String[]{"Profile", "Chat"}, new DialogInterface.OnClickListener() {
                     @Override
@@ -91,7 +95,7 @@ public class AdapterUsers extends RecyclerView.Adapter<AdapterUsers.MyHolder> {
                         }
                     }
                 });
-                builder.create().show();
+                builder.create().show();**/
             }
         });
 

@@ -6,7 +6,6 @@ import android.content.Context
 import androidx.recyclerview.widget.RecyclerView
 
 import com.google.firebase.auth.FirebaseUser
-import com.google.android.gms.ads.interstitial.InterstitialAd
 import android.view.LayoutInflater
 import android.view.ViewGroup
 import android.os.Bundle
@@ -22,15 +21,10 @@ import android.widget.*
 import androidx.annotation.NonNull
 import androidx.fragment.app.Fragment
 import androidx.recyclerview.widget.LinearLayoutManager
-import androidx.viewpager.widget.ViewPager
-import com.bumptech.glide.Glide
 import com.getbase.floatingactionbutton.FloatingActionButton
 import com.google.android.gms.ads.AdRequest
-import com.google.android.material.tabs.TabLayout
 import com.google.firebase.database.*
 import com.talos.weaver.*
-import com.talos.weaver.Adapter.PostAdapter
-import com.talos.weaver.Model.Post
 import com.talos.weaver.Model.Story
 import com.talos.weaver.Model.User
 import com.talos.weaver.R
@@ -65,7 +59,7 @@ class HomeFragment() : Fragment() {
 
     var name: TextView? = null
     private var recyclerView_story: RecyclerView? = null
-    private var storyAdapter: com.talos.weaver.Adapter.StoryAdapter? = null
+    //private var storyAdapter: com.talos.weaver.Adapter.StoryAdapter? = null
     private var storyList: MutableList<Story?>? = null
     private var followingList: MutableList<String?>? = null
     var firebaseUser: FirebaseUser? = null
@@ -242,8 +236,8 @@ class HomeFragment() : Fragment() {
         )
         recyclerView_story!!.setLayoutManager(linearLayoutManager)
         storyList = ArrayList()
-        storyAdapter = com.talos.weaver.Adapter.StoryAdapter(context, storyList)
-        recyclerView_story!!.setAdapter(storyAdapter)
+       // storyAdapter = com.talos.weaver.Adapter.StoryAdapter(context, storyList)
+      //  recyclerView_story!!.setAdapter(storyAdapter)
         image_profile = view.findViewById(R.id.image_profile)
         progress_circular = view.findViewById(R.id.progress_circular)
         floatingActionButton2 = view.findViewById(R.id.togowrite)
@@ -399,7 +393,7 @@ class HomeFragment() : Fragment() {
                         storyList!!.add(story)
                     }
                 }
-                storyAdapter!!.notifyDataSetChanged()
+                //storyAdapter!!.notifyDataSetChanged()
             }
 
             override fun onCancelled(databaseError: DatabaseError) {}

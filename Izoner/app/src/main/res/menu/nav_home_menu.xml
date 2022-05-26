@@ -6,11 +6,12 @@
 
     <item android:title="Your Activities">
         <menu>
-
             <item
-                android:id="@+id/nav_message"
-                android:icon="@drawable/ic_poster"
-                android:title="Chat" />
+                android:id="@+id/books"
+                android:icon="@drawable/ic_baseline_menu_book_24"
+                android:title="Books"/>
+
+
             <item
                 android:id="@+id/shorts"
                 android:visible="false"
@@ -25,10 +26,15 @@
                 android:id="@+id/news"
                 android:icon="@drawable/ic_round_newspaper_24"
                 android:title="News"/>
+            <item
+            android:id="@+id/nav_message"
+            android:icon="@drawable/ic_outline_message_24"
+            android:title="Chat" />
 
 
             <item
                 android:id="@+id/trash"
+                android:visible="false"
                 android:icon="@mipmap/ic_launcher_foreground"
                 android:title="CobCoin" />
 

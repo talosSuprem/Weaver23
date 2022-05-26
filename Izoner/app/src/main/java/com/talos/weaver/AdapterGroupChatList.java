@@ -2,6 +2,7 @@ package com.talos.weaver;
 
 import android.content.Context;
 import android.content.Intent;
+import android.text.format.DateFormat;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
@@ -12,11 +13,19 @@ import androidx.annotation.HalfFloat;
 import androidx.annotation.NonNull;
 import androidx.recyclerview.widget.RecyclerView;
 
+import com.bumptech.glide.Glide;
+import com.google.firebase.database.DataSnapshot;
+import com.google.firebase.database.DatabaseError;
+import com.google.firebase.database.DatabaseReference;
+import com.google.firebase.database.FirebaseDatabase;
+import com.google.firebase.database.ValueEventListener;
 import com.squareup.picasso.Picasso;
 import com.talos.weaver.Adapter.GroupChatActivity;
 import com.talos.weaver.Model.ModelGroupChatList;
 
 import java.util.ArrayList;
+import java.util.Calendar;
+import java.util.Locale;
 
 public class AdapterGroupChatList extends RecyclerView.Adapter<AdapterGroupChatList.HolderGroupChatList> {
 
@@ -44,9 +53,17 @@ public class AdapterGroupChatList extends RecyclerView.Adapter<AdapterGroupChatL
         String groupIcon = model.getGroupIcon();
         String groupTitle = model.getGroupTitle();
 
+        holder.nameTv.setText("");
+        holder.timeTv.setText("");
+        holder.messageTv.setText("");
+
+        loadLastMessage(model, holder);
+
 
         holder.groupTitleTv.setText(groupTitle);
         try{
+
+            //Glide.with(context).load(groupIcon).placeholder(R.drawable.ic_round_group_add_24).into(holder.groupIconIv);
             Picasso.get().load(groupIcon).placeholder(R.drawable.ic_round_group_add_24).into(holder.groupIconIv);
         }
         catch (Exception e){
@@ -64,6 +81,54 @@ public class AdapterGroupChatList extends RecyclerView.Adapter<AdapterGroupChatL
             }
         });
 
+    }
+
+    private void loadLastMessage(ModelGroupChatList model, HolderGroupChatList holder) {
+
+        DatabaseReference ref = FirebaseDatabase.getInstance().getReference("Groups");
+        ref.child(model.getGroupId()).child("Messages").limitToLast(1)
+                .addValueEventListener(new ValueEventListener() {
+                    @Override
+                    public void onDataChange(@NonNull DataSnapshot snapshot) {
+                        for(DataSnapshot ds: snapshot.getChildren()){
+                            String message = ""+ds.child("message").getValue();
+                            String timestamp = ""+ds.child("timestamp").getValue();
+                            String sender = ""+ ds.child("sender").getValue();
+
+                            Calendar cal = Calendar.getInstance(Locale.ENGLISH);
+                            cal.setTimeInMillis(Long.parseLong(timestamp));
+                            String dateTime = DateFormat.format("dd/MM/yyyy hh:mm aa", cal).toString();
+
+                            holder.messageTv.setText(message);
+                            holder.timeTv.setText(dateTime);
+
+
+
+                            DatabaseReference ref = FirebaseDatabase.getInstance().getReference("Users");
+                            ref.orderByChild("id").equalTo(sender)
+                                    .addValueEventListener(new ValueEventListener() {
+                                        @Override
+                                        public void onDataChange(@NonNull DataSnapshot snapshot) {
+                                            for(DataSnapshot ds: snapshot.getChildren()){
+                                                String name = ""+ds.child("name").getValue();
+
+                                                holder.nameTv.setText(name);
+                                            }
+                                        }
+
+                                        @Override
+                                        public void onCancelled(@NonNull DatabaseError error) {
+
+                                        }
+                                    });
+                        }
+                    }
+
+                    @Override
+                    public void onCancelled(@NonNull DatabaseError error) {
+
+                    }
+                });
     }
 
     @Override

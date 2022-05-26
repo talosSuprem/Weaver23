@@ -3,21 +3,52 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:background="@color/white"
     tools:context=".ProfileSocialeFragment">
-    <Button
-        android:id="@+id/fab"
-        android:drawableStart="@drawable/ic_edit_black_24dp"
-        android:layout_marginTop="18dp"
-        android:layout_marginLeft="120dp"
-        android:layout_width="wrap_content"
 
-        android:layout_height="28dp"
-        android:layout_alignParentEnd="true"
-        android:layout_marginRight="20dp"
-        android:background="@drawable/cust_infocase5"
-        android:text="edit"/>
+    <RelativeLayout
+        android:id="@+id/toolbarRl"
+        android:layout_width="match_parent"
+        android:layout_height="45dp"
+        android:background="@color/colorWhite">
+
+        <ImageButton
+            android:visibility="invisible"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="10dp"
+            android:layout_marginTop="10dp"
+            android:background="@android:color/transparent"
+            android:src="@drawable/ic_arrow_back"
+            app:tint="@color/black" />
+
+        <TextView
+            android:id="@+id/titleNameTv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="8dp"
+            android:text="Profile"
+            android:textColor="@color/black"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/levelUserTv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentEnd="true"
+
+            android:padding="10dp"
+            android:text="10"
+            android:textColor="@color/black" />
+
+
+    </RelativeLayout>
+
 
     <ScrollView
+        android:layout_below="@id/toolbarRl"
         android:layout_width="match_parent"
         android:layout_height="wrap_content">
 
@@ -33,8 +64,6 @@
                 android:background="#A4A3A8">
 
 
-
-
             </ImageView>
 
             <LinearLayout
@@ -44,38 +73,56 @@
                 android:layout_marginTop="100dp"
                 android:orientation="horizontal">
 
-                <LinearLayout
+                <RelativeLayout
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:orientation="vertical">
 
-                    <TextView
-                        android:id="@+id/levelTv"
+
+
+                    <RelativeLayout
                         android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:layout_gravity="center"
-                        android:layout_marginLeft="12dp"
+                        android:layout_height="wrap_content">
+                        <RelativeLayout
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="20dp"
+                            android:background="@drawable/cust_shapelevel"
+                            android:foregroundGravity="center"
+                            android:gravity="center">
+
+                            <TextView
+                                android:id="@+id/levelTv"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_gravity="center"
+                                android:gravity="center"
+                                android:text="12"
+                                android:layout_marginLeft="3dp"
+                                android:layout_marginRight="3dp"
+                                android:textColor="@color/black" />
+                        </RelativeLayout>
+
+                        <com.mikhaellopez.circularimageview.CircularImageView
+                            android:id="@+id/avatarIv"
+                            android:layout_width="118dp"
+                            android:layout_height="118dp"
+                            android:layout_marginStart="20dp"
+
+                            android:layout_marginLeft="20dp"
+                            android:background="@null"
 
 
-                        android:textColor="@color/white" />
-
-                    <com.mikhaellopez.circularimageview.CircularImageView
-                        android:id="@+id/avatarIv"
-                        android:layout_width="118dp"
-                        android:layout_height="118dp"
-                        android:layout_marginStart="20dp"
-
-                        android:layout_marginLeft="20dp"
-                        android:background="@null"
+                            android:padding="5dp"
+                            android:src="@drawable/ic_person_24" />
+                    </RelativeLayout>
 
 
-                        android:padding="5dp"
-                        android:src="@drawable/ic_person_24" />
 
-                </LinearLayout>
+                </RelativeLayout>
 
 
-                <LinearLayout
+                <RelativeLayout
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:orientation="vertical">
@@ -95,13 +142,96 @@
                         android:id="@+id/textTv"
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
+                        android:layout_below="@id/nameTV"
                         android:layout_marginStart="5dp"
 
                         android:layout_marginLeft="5dp"
                         android:textColor="@color/colorWhite" />
 
 
-                </LinearLayout>
+                    <RelativeLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@id/textTv"
+                        android:layout_marginTop="35dp"
+                        android:layout_alignParentRight="true"
+                        android:layout_marginRight="120dp"
+                        android:layout_alignRight="@id/fab"
+                        android:orientation="vertical"
+
+
+                        >
+
+                        <TextView
+                            android:id="@+id/abo1"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="Abonnements" />
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="100"
+                            android:layout_centerHorizontal="true"
+                            android:layout_below="@id/abo1"/>
+
+
+                    </RelativeLayout>
+
+                    <RelativeLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@id/textTv"
+                        android:layout_marginTop="35dp"
+                        android:layout_alignParentRight="true"
+                        android:layout_marginRight="50dp"
+                        android:layout_alignRight="@id/fab"
+                        android:orientation="vertical"
+
+
+                       >
+
+                        <TextView
+                            android:id="@+id/abo"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="Abonnés" />
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="100"
+                            android:layout_centerHorizontal="true"
+                            android:layout_below="@id/abo"/>
+
+
+                    </RelativeLayout>
+
+                    <ImageButton
+                        android:id="@+id/fab"
+                        android:layout_width="30dp"
+                        android:layout_height="30dp"
+                        android:layout_below="@id/textTv"
+                        android:layout_alignParentEnd="true"
+                        android:layout_marginTop="35dp"
+                        android:layout_marginEnd="10dp"
+                        android:background="@drawable/cust_shapeset"
+                        android:padding="10dp"
+                        android:src="@drawable/ic_settings"
+
+                        />
+
+
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:layout_width="wrap_content"
+                    android:orientation="vertical"
+
+
+                    android:layout_height="wrap_content">
+
+
+                </RelativeLayout>
+
 
 
             </LinearLayout>
@@ -109,6 +239,8 @@
             <LinearLayout
                 android:layout_marginTop="18dp"
                 android:id="@+id/linearBio"
+               android:paddingHorizontal="20dp"
+                android:paddingVertical="5dp"
                 android:layout_below="@id/linearLayout"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
@@ -117,12 +249,14 @@
                     android:drawableStart="@drawable/ic_twotone_book_24"
                     android:layout_marginLeft="18dp"
                     android:id="@+id/bioTv"
+                    android:visibility="gone"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_below="@+id/linearLayout"
                     android:text="Your bio: " />
                 <TextView
                     android:id="@+id/bioTV"
+                    android:text="ffff"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     />
@@ -131,7 +265,7 @@
             </LinearLayout>
 
 
-            <LinearLayout
+            <RelativeLayout
                 android:layout_marginLeft="18dp"
                 android:layout_below="@id/linearBio"
                 android:id="@+id/joined"
@@ -140,22 +274,21 @@
                 android:orientation="horizontal"
 
                 >
-                <TextView
-                    android:drawableStart="@drawable/ic_twotone_date_range_24"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:text="Join us : "/>
+
                 <TextView
                     android:id="@+id/joinedTv"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_below="@+id/linearLayout"
-                    />
+                    android:layout_alignParentEnd="true"
+                    android:layout_marginEnd="20dp"
+                    android:text="5555" />
 
-            </LinearLayout>
+            </RelativeLayout>
 
 
             <EditText
+
                 android:id="@+id/search"
                 android:drawableLeft="@drawable/ic_search"
                 android:layout_width="match_parent"
@@ -172,7 +305,7 @@
                 android:id="@+id/recyclerview_posts"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:layout_below="@+id/search"/>
+                android:layout_below="@+id/search" />
 
         </RelativeLayout>
 

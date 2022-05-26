@@ -5,7 +5,8 @@
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     app:cardElevation="0dp"
-    app:contentPadding="5dp"
+    app:contentPadding="0dp"
+    app:cardCornerRadius="8dp"
     app:cardUseCompatPadding="true"
     android:background="@color/colorWhite"
     app:cardBackgroundColor="@color/colorWhite">
@@ -38,6 +39,7 @@
 
 
                 <LinearLayout
+                    android:layout_marginTop="5dp"
                     android:layout_marginRight="1dp"
                     android:id="@+id/profileLayout"
                     android:layout_width="0dp"
@@ -50,6 +52,7 @@
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:textSize="15sp"
+                        android:fontFamily="@font/g_bold"
                         android:textColor="@color/colorBlack"
                         android:text="Name"/>
 
@@ -64,27 +67,7 @@
 
 
                 </LinearLayout>
-                <LinearLayout
-                    android:layout_marginTop="7dp"
-                    android:layout_width="wrap_content"
-                    android:paddingHorizontal="7dp"
-                    android:background="@color/colorWhite"
-                    android:layout_height="wrap_content">
-                    <TextView
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:textSize="10dp"
-                        android:textColor="@color/colorBlack"
-                        android:text="SCORE: "/>
 
-                    <TextView
-                        android:id="@+id/pScore"
-                        android:textSize="10dp"
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:textColor="@color/colorBlack"
-                        android:text="1"/>
-                </LinearLayout>
 
 
 
@@ -93,8 +76,11 @@
 
 
             <ImageButton
-                android:layout_marginLeft="12dp"
+                android:layout_marginTop="10dp"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
                 android:id="@+id/moreBtn"
+                android:tint="@color/colorgrey2"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:background="@null"
@@ -107,15 +93,16 @@
             android:id="@+id/linearLayout1"
             android:layout_width="wrap_content"
             android:orientation="vertical"
-            android:layout_marginLeft="18dp"
+            android:layout_marginLeft="1dp"
             android:layout_height="wrap_content">
 
             <TextView
-                android:layout_marginLeft="18dp"
+                android:layout_marginLeft="17dp"
                 android:id="@+id/pTitleTv"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:textSize="16sp"
+                android:textSize="18sp"
+                android:fontFamily="sans-serif-condensed-medium"
                 android:textStyle="bold"
                 android:textColor="@color/colorBlack"
                 android:autoLink="all"
@@ -126,7 +113,7 @@
             <TextView
                 android:paddingHorizontal="18dp"
                 android:textColor="@color/black"
-
+                android:textSize="17sp"
                 android:id="@+id/pDescriptionTv"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
@@ -147,21 +134,30 @@
                 android:gravity="center"
                 android:orientation="vertical">
 
-                <com.google.android.material.imageview.ShapeableImageView
+                <ImageView
 
 
                     android:id="@+id/pImageIv"
                     android:layout_width="match_parent"
                     android:layout_height="0dp"
                     android:layout_gravity="center"
-
-
-
+                    android:scaleType="centerCrop"
                     android:maxWidth="300dp"
+                    android:visibility="visible"
                     app:layout_constraintDimensionRatio="1:1"
-
-
                     app:strokeWidth="0.5dp" />
+
+                <com.google.android.exoplayer2.ui.PlayerView
+                    android:layout_width="match_parent"
+                    android:layout_height="350dp"
+                    android:id="@+id/exoplayer_item_post"
+                    app:use_controller="true"
+                    app:show_timeout="1000"
+                    android:visibility="visible"
+                    tools:ignore="MissingConstraints"
+                    app:resize_mode="fill"
+
+                    app:controller_layout_id="@layout/custom_exoplayer"/>
 
 
             </androidx.constraintlayout.widget.ConstraintLayout>
@@ -198,18 +194,19 @@
 
                 <ImageButton
 
-                    android:background="@null"
                     android:id="@+id/likeBtn"
                     android:layout_width="80dp"
                     android:layout_height="wrap_content"
-                    android:text="@string/like"
-                    android:textSize="8dp"
-                    android:clickable="true"
-                    android:paddingHorizontal="5dp"
                     android:layout_weight="1"
-                    android:src="@drawable/ic_round_arrow_like"
+                    android:background="@null"
+                    android:clickable="true"
+                    android:focusable="true"
+                    android:paddingHorizontal="5dp"
+                    android:src="@drawable/arrowup"
+                    android:text="@string/like"
 
-                    android:focusable="true" />
+                    android:textSize="8dp" />
+
                 <ImageButton
                     android:id="@+id/dislikesBtn"
                     android:layout_width="80dp"
@@ -219,8 +216,9 @@
                     android:focusable="true"
                     android:layout_weight="1"
                     android:paddingHorizontal="5dp"
+                    android:rotationX="@integer/material_motion_duration_medium_1"
 
-                    android:src="@drawable/ic_arrow_down"
+                    android:src="@drawable/arrowup"
                     android:background="@null"
 
                     />
@@ -234,11 +232,13 @@
                 android:visibility="gone"
                 android:orientation="horizontal">
                 <TextView
+                    android:layout_marginLeft="30dp"
                     android:id="@+id/pLikesTv"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:textSize="15sp"
                     android:textColor="#27872B"
+                    android:layout_marginRight="5dp"
                     android:paddingHorizontal="2dp"
                     android:text="@string/_11_likes"/>
                 <ImageView
@@ -255,7 +255,9 @@
                     android:layout_height="wrap_content"
                     android:paddingHorizontal="2dp"
                     android:textSize="15sp"
+                    android:layout_marginRight="5dp"
                     android:textColor="#9A1111"
+                    android:layout_marginLeft="12dp"
                     android:text="23 Blames"/>
 
                 <ImageView
@@ -264,11 +266,15 @@
                     android:layout_height="wrap_content"
                     android:src="@drawable/ic_arrow_down"/>
                 <TextView
+                    android:visibility="gone"
+                    android:layout_marginRight="12dp"
+                    android:layout_marginLeft="12dp"
                     android:id="@+id/pCommentsTv"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:text="0 Comments"/>
                 <ImageView
+                    android:visibility="gone"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:src="@drawable/ic_baseline_comment_24"/>
@@ -283,7 +289,7 @@
                 android:layout_width="80dp"
                 android:layout_height="wrap_content"
                 android:textSize="8dp"
-                android:src="@drawable/ic_baseline_autorenew"
+                android:src="@drawable/reupload"
 
                 android:layout_weight="1"
                 android:paddingHorizontal="5dp"
@@ -292,15 +298,13 @@
 
                 />
             <ImageButton
-                android:src="@drawable/ic_baseline_comment_24"
+                android:src="@drawable/commentoff"
                 android:id="@+id/commentBtn"
                 android:layout_width="80dp"
-
-
                 android:layout_height="wrap_content"
                 android:layout_gravity="center"
                 android:gravity="center"
-                android:paddingHorizontal="5dp"
+                android:paddingHorizontal="6dp"
                 android:textSize="8dp"
                 android:layout_weight="1"
                 android:background="@null"
@@ -317,6 +321,57 @@
                 android:background="@null"
                 />
         </LinearLayout>
+        <LinearLayout
+
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <LinearLayout
+                android:layout_marginLeft="10dp"
+                android:layout_marginTop="7dp"
+                android:layout_width="wrap_content"
+                android:paddingHorizontal="7dp"
+                android:background="@color/colorWhite"
+                android:layout_height="wrap_content">
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textSize="10dp"
+                    android:textColor="@color/colorBlack"
+                    android:text="SCORE: "/>
+
+                <TextView
+                    android:id="@+id/pScore"
+                    android:textSize="10dp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textColor="@color/colorBlack"
+                    android:text="1"/>
+            </LinearLayout>
+            <LinearLayout
+                android:layout_marginLeft="10dp"
+                android:layout_marginTop="7dp"
+                android:layout_width="wrap_content"
+                android:paddingHorizontal="7dp"
+                android:background="@color/colorWhite"
+                android:layout_height="wrap_content">
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textSize="10dp"
+                    android:textColor="@color/colorBlack"
+                    android:text="COMMENTS: "/>
+
+                <TextView
+                    android:id="@+id/commentTv"
+                    android:textSize="10dp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textColor="@color/colorBlack"
+                    android:text="1"/>
+            </LinearLayout>
+
+
+        </LinearLayout>
 
 
 
@@ -327,6 +382,12 @@
 
 
     </LinearLayout>
+    <View
+        android:layout_width="match_parent"
+        android:background="@color/black"
+        android:layout_height="0.5dp">
+
+    </View>
 
 
 

@@ -1,9 +1,12 @@
 package com.talos.weaver.Adapter;
 
 import android.annotation.SuppressLint;
+import android.app.AlertDialog;
 import android.app.ProgressDialog;
 import android.content.Context;
+import android.content.DialogInterface;
 import android.content.Intent;
+import android.text.TextUtils;
 import android.text.format.DateFormat;
 import android.util.SparseIntArray;
 import android.view.Gravity;
@@ -13,6 +16,7 @@ import android.view.MenuItem;
 import android.view.View;
 import android.view.ViewGroup;
 import android.widget.Button;
+import android.widget.EditText;
 import android.widget.ImageButton;
 import android.widget.ImageView;
 import android.widget.LinearLayout;
@@ -37,6 +41,7 @@ import com.google.firebase.database.ValueEventListener;
 import com.google.firebase.storage.FirebaseStorage;
 import com.google.firebase.storage.StorageReference;
 import com.squareup.picasso.Picasso;
+import com.talos.weaver.DashboardActivity;
 import com.talos.weaver.Model.ModelPost;
 import com.talos.weaver.PostDetailActivity;
 import com.talos.weaver.PostDislikedByActivity;
@@ -368,7 +373,7 @@ public class AdapterPostsSocial extends RecyclerView.Adapter<AdapterPostsSocial.
         }
 
        popupMenu.getMenu().add(Menu.NONE, 1, 0,"View Detail");
-
+       popupMenu.getMenu().add(Menu.NONE, 2, 0, "Report");
 
 
         popupMenu.setOnMenuItemClickListener(new PopupMenu.OnMenuItemClickListener() {
@@ -383,6 +388,11 @@ public class AdapterPostsSocial extends RecyclerView.Adapter<AdapterPostsSocial.
                     intent.putExtra("postId", pId);
                     context.startActivity(intent);
                 }
+                else if(id==2){
+
+                    showEditReportDialog();
+
+                }
 
 
 
@@ -390,6 +400,106 @@ public class AdapterPostsSocial extends RecyclerView.Adapter<AdapterPostsSocial.
             }
         });
         popupMenu.show();
+    }
+
+    private void showEditReportDialog() {
+
+        String options[] = {"Offensive content", "Insulting content", "Sexual content", "Violated content", "give more information"};
+        AlertDialog.Builder builder = new AlertDialog.Builder(context);
+        builder.setTitle("Specify the reason for your report");
+        builder.setIcon(R.drawable.ic_baseline_report_24);
+        builder.setItems(options, new DialogInterface.OnClickListener() {
+            @Override
+            public void onClick(DialogInterface dialog, int which) {
+                if(which == 0){
+                    Toast.makeText(context, "Is reported", Toast.LENGTH_SHORT).show();
+                    Toast.makeText(context, "Thanks for your report", Toast.LENGTH_SHORT).show();
+                }
+                else if (which == 1){
+                    Toast.makeText(context, "Is reported", Toast.LENGTH_SHORT).show();
+                    Toast.makeText(context, "Thanks for your report", Toast.LENGTH_SHORT).show();
+
+
+                }
+                else if (which == 2){
+                    Toast.makeText(context, "Is reported", Toast.LENGTH_SHORT).show();
+                    Toast.makeText(context, "Thanks for your report", Toast.LENGTH_SHORT).show();
+
+
+                }
+                else if (which == 3){
+                    Toast.makeText(context, "Is reported", Toast.LENGTH_SHORT).show();
+                    Toast.makeText(context, "Thanks for your report", Toast.LENGTH_SHORT).show();
+
+
+                }
+                else if (which == 4){
+                    showImagePicDialog("more information");
+                }
+
+            }
+        });
+        builder.create().show();
+
+    }
+
+    private void showImagePicDialog(String key) {
+        AlertDialog.Builder builder = new AlertDialog.Builder(context);
+        builder.setTitle("Give "+ key);
+        builder.setIcon(R.drawable.ic_edit_black_24dp);
+
+
+        LinearLayout linearLayout = new LinearLayout(context);
+        linearLayout.setOrientation(LinearLayout.VERTICAL);
+        linearLayout.setPadding(10, 10, 10, 10);
+
+        EditText editText = new EditText(context);
+        editText.setHint("Enter "+key);
+        linearLayout.addView(editText);
+
+        builder.setView(linearLayout);
+
+        builder.setPositiveButton("Update", new DialogInterface.OnClickListener() {
+            @Override
+            public void onClick(DialogInterface dialog, int which) {
+                String value = editText.getText().toString().trim();
+
+                if(!TextUtils.isEmpty(value)){
+                    //pd.show();
+                    HashMap<String, Object> result = new HashMap<>();
+                    result.put(key, value);
+
+                   /** databaseReference.child(user.getUid()).updateChildren(result)
+                            .addOnSuccessListener(new OnSuccessListener<Void>() {
+                                @Override
+                                public void onSuccess(Void unused) {
+                                    pd.dismiss();
+                                    Toast.makeText(getActivity(), "Updated", Toast.LENGTH_SHORT).show();
+                                }
+                            })
+                            .addOnFailureListener(new OnFailureListener() {
+                                @Override
+                                public void onFailure(@NonNull Exception e) {
+                                    pd.dismiss();
+                                    Toast.makeText(getActivity(), e.getMessage(), Toast.LENGTH_SHORT).show();
+
+                                }
+                            });**/
+                }
+
+            }
+        });
+        builder.setNegativeButton("Cancel", new DialogInterface.OnClickListener() {
+            @Override
+            public void onClick(DialogInterface dialog, int which) {
+                dialog.dismiss();
+
+            }
+        });
+
+        builder.create().show();
+
+
     }
 
     private void beginDelete(String pId, String pImage) {

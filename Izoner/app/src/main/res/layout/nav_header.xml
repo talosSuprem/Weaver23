@@ -5,16 +5,15 @@
     android:background="@drawable/cust_infocase4">
 
     <TextView
+        android:id="@+id/weaver"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Weaver"
-        android:textColor="@color/black"
-        android:layout_marginTop="18dp"
-        android:textStyle="italic"
-        android:textSize="18dp"
         android:layout_marginLeft="18dp"
-        android:id="@+id/weaver"
-        />
+        android:layout_marginTop="18dp"
+        android:text="QalamStudent"
+        android:textColor="@color/black"
+        android:textSize="18dp"
+        android:textStyle="italic" />
 
     <de.hdodenhof.circleimageview.CircleImageView
         android:layout_below="@+id/weaver"

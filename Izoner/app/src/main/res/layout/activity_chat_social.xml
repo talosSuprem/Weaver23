@@ -8,16 +8,18 @@
 
     <androidx.appcompat.widget.Toolbar
         android:id="@+id/toolbar"
+
         android:layout_width="match_parent"
         android:layout_height="@android:dimen/app_icon_size"
-        android:background="@color/colorWhite"
+        android:background="@color/colorPrimary"
         android:theme="@style/ThemeOverlay.AppCompat.Dark.ActionBar">
 
         <ImageView
             android:id="@+id/back"
             android:layout_width="30dp"
-            android:layout_marginStart="3dp"
             android:layout_height="30dp"
+            android:layout_marginStart="3dp"
+            android:tint="@color/white"
             android:layout_marginRight="12dp"
             android:src="@drawable/ic_arrow_back" />
 
@@ -46,7 +48,7 @@
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:text="his name"
-                android:textColor="@color/black"
+                android:textColor="@color/colorWhite"
                 android:textSize="18sp"
                 android:textStyle="bold" />
 
@@ -56,7 +58,7 @@
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:text="Online"
-                android:textColor="@color/colorSecondaryDark"
+                android:textColor="@color/colorWhite"
 
                 android:textSize="10sp"
                 android:textStyle="bold" />
@@ -68,21 +70,20 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_gravity="end"
-            android:layout_marginEnd="20dp"
-            >
+            android:layout_marginEnd="20dp">
 
             <TextView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:text="SCORE: "
-                android:textColor="@color/colorBlack" />
+                android:textColor="@color/colorWhite" />
 
             <TextView
                 android:id="@+id/cScore"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:text="10"
-                android:textColor="@color/colorBlack" />
+                android:textColor="@color/colorWhite" />
         </LinearLayout>
 
 

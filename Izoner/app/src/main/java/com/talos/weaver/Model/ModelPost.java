@@ -3,7 +3,7 @@ package com.talos.weaver.Model;
 public class ModelPost {
 
 
-    String pId, pTitle, pDescr,  pImage, pTime, uid, uEmail, uDp, uName;
+    String pId, pTitle, pDescr,  pImage, pTime, uid, uEmail, uDp, uName, type;
     int pScore, pLikes, pDislikes, pComments;
 
 
@@ -11,7 +11,7 @@ public class ModelPost {
     public ModelPost() {
     }
 
-    public ModelPost(String pId, String pTitle, String pDescr, String pImage, String pTime, String uid, String uEmail, String uDp, String uName, int pScore, int pLikes, int pDislikes, int pComments) {
+    public ModelPost(String pId, String pTitle, String pDescr, String pImage, String pTime, String uid, String uEmail, String uDp, String uName, String type, int pScore, int pLikes, int pDislikes, int pComments) {
         this.pId = pId;
         this.pTitle = pTitle;
         this.pDescr = pDescr;
@@ -21,6 +21,7 @@ public class ModelPost {
         this.uEmail = uEmail;
         this.uDp = uDp;
         this.uName = uName;
+        this.type = type;
         this.pScore = pScore;
         this.pLikes = pLikes;
         this.pDislikes = pDislikes;
@@ -97,6 +98,14 @@ public class ModelPost {
 
     public void setuName(String uName) {
         this.uName = uName;
+    }
+
+    public String getType() {
+        return type;
+    }
+
+    public void setType(String type) {
+        this.type = type;
     }
 
     public int getpScore() {

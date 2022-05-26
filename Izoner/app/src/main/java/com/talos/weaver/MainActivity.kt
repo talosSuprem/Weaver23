@@ -48,10 +48,10 @@ class MainActivity : AppCompatActivity() {
             val editor = getSharedPreferences("PREFS", MODE_PRIVATE).edit()
             editor.putString("profileid", publisher)
             editor.apply()
-            supportFragmentManager.beginTransaction().replace(
-                R.id.fragment_container,
-                ProfileFragment()
-            ).commit()
+            //supportFragmentManager.beginTransaction().replace(
+              //  R.id.fragment_container,
+                //ProfileFragment()
+          //  ).commit()
         } else {
             supportFragmentManager.beginTransaction().replace(
                 R.id.fragment_container,

@@ -22,21 +22,20 @@
             android:layout_height="50dp"/>
 
 
-
         <TextView
             android:id="@+id/messageTv"
-            android:layout_gravity="right"
-
-            android:textSize="14dp"
-            android:textColor="@color/colorBlack"
-            android:background="@drawable/bg_sender"
-            android:padding="10dp"
-            android:layout_alignParentEnd="true"
-
-            android:gravity="center"
-            android:text="his Message"
             android:layout_width="wrap_content"
-            android:layout_height="wrap_content"/>
+
+            android:layout_height="wrap_content"
+            android:layout_alignParentEnd="true"
+            android:layout_gravity="right"
+            android:fontFamily="@font/g_bold"
+            android:gravity="center"
+
+            android:padding="10dp"
+            android:text="his Message"
+            android:textColor="@color/colorBlack"
+            android:textSize="14dp" />
         <ImageView
             android:id="@+id/messageIv"
             android:layout_width="wrap_content"

@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".qalambook.PdfListAdminActivity">
+
+    <RelativeLayout
+        android:id="@+id/toolbarRl"
+        android:layout_width="match_parent"
+        android:layout_height="45dp"
+        android:background="@color/colorPrimary">
+
+        <ImageButton
+            android:id="@+id/backBtn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="10dp"
+            android:layout_marginTop="10dp"
+            android:background="@android:color/transparent"
+            android:src="@drawable/ic_arrow_back"
+            app:tint="@color/white" />
+
+        <TextView
+            android:id="@+id/titleTv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="8dp"
+            android:text="Books"
+            android:textColor="@color/colorWhite"
+            android:textStyle="bold" />
+        <TextView
+
+            android:id="@+id/subtitleTv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="0.5dp"
+            android:text="Books"
+            android:layout_below="@id/titleTv"
+            android:textColor="@color/colorWhite"
+            android:textStyle="bold" />
+
+
+    </RelativeLayout>
+
+    <EditText
+        android:id="@+id/searchEt"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/toolbarRl"
+        android:layout_marginStart="10dp"
+        android:layout_marginTop="10dp"
+
+        android:layout_marginEnd="10dp"
+        android:background="@drawable/edittext"
+        android:drawableStart="@drawable/ic_search"
+        android:drawablePadding="10dp"
+        android:hint="search" />
+
+
+
+
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/bookRv"
+        android:layout_below="@id/searchEt"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginTop="5dp"
+        app:layoutManager="androidx.recyclerview.widget.LinearLayoutManager"
+
+        tools:listitem="@layout/row_pdf_admin"/>
+
+
+
+</RelativeLayout>

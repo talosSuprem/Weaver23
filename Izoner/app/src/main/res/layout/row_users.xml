@@ -1,13 +1,13 @@
 <?xml version="1.0" encoding="utf-8"?>
 <androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="match_parent"
-    android:layout_height="80dp"
+    android:layout_height="wrap_content"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     app:cardUseCompatPadding="true"
-    app:cardCornerRadius="2dp"
-    app:cardElevation="2dp"
+    app:cardCornerRadius="6dp"
+    app:cardElevation="3dp"
     app:cardBackgroundColor="@color/colorWhite"
-    app:contentPadding="3dp">
+    app:contentPadding="0dp">
 
 
 
@@ -23,10 +23,11 @@
             <TextView
                 android:id="@+id/leveluserTv"
                 android:layout_width="wrap_content"
-                android:layout_height="26dp"
+                android:layout_height="wrap_content"
                 android:layout_gravity="center"
                 android:gravity="center"
-                android:text="000" />
+                android:textSize="10dp"
+                 />
             <de.hdodenhof.circleimageview.CircleImageView
                 android:id="@+id/avatarIv"
                 android:src="@drawable/ic_person_black_24dp"
@@ -40,11 +41,14 @@
             android:layout_height="wrap_content"
             android:orientation="vertical">
             <TextView
+                android:layout_marginTop="10dp"
+                android:fontFamily="@font/g_bold"
                 android:id="@+id/nameTv"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:text="Person name"
                 android:textSize="18dp"
+                android:textStyle="bold"
                 android:textColor="@color/black"/>
             <TextView
                 android:id="@+id/emailTv"
@@ -64,16 +68,20 @@
     </LinearLayout>
     <Button
 
-        android:layout_width="wrap_content"
-        android:layout_height="30dp"
-        android:background="@drawable/cust_infocase5"
+        android:layout_width="70dp"
+        android:layout_height="20dp"
+        android:background="@drawable/shape_button01"
         android:visibility="visible"
+
         android:text="FOllow"
+        android:fontFamily="@font/g_light"
         android:id="@+id/btn_follow"
-        android:textColor="@color/colorBlack"
+        android:textColor="@color/colorWhite"
         android:layout_gravity="right"
-        android:layout_marginTop="18dp"
-        android:layout_marginRight="18dp"
+
+
+        android:layout_marginTop="20dp"
+        android:layout_marginRight="20dp"
 
 
 

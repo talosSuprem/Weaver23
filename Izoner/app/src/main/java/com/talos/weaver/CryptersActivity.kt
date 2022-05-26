@@ -1,8 +1,7 @@
 package com.talos.weaver
 
+import android.app.PendingIntent.getActivity
 import android.content.Intent
-import android.media.Image
-import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.view.Menu
 import android.view.MenuItem
@@ -10,6 +9,7 @@ import android.view.View
 import android.widget.Button
 import android.widget.ImageView
 import android.widget.TextView
+import androidx.appcompat.app.AppCompatActivity
 import androidx.appcompat.widget.Toolbar
 import androidx.fragment.app.Fragment
 import androidx.fragment.app.FragmentManager
@@ -21,13 +21,9 @@ import com.google.firebase.auth.FirebaseAuth
 import com.google.firebase.auth.FirebaseUser
 import com.google.firebase.database.*
 import com.talos.weaver.FragmentMessagerie.UsersChatFragment
-import com.talos.weaver.Fragments.ProfileFragment
 import com.talos.weaver.Model.ModelChat
 import com.talos.weaver.Model.User
 import de.hdodenhof.circleimageview.CircleImageView
-
-import java.util.ArrayList
-import java.util.HashMap
 
 class CryptersActivity : AppCompatActivity() {
     var profile_image: CircleImageView? = null
@@ -52,6 +48,7 @@ class CryptersActivity : AppCompatActivity() {
         returnh!!.setOnClickListener(View.OnClickListener {
             val intent = Intent(this@CryptersActivity, MainActivity::class.java)
             startActivity(intent)
+
         })
         username = findViewById(R.id.username)
         firebaseUser = FirebaseAuth.getInstance().currentUser

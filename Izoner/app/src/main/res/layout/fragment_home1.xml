@@ -41,6 +41,7 @@
                         android:background="@color/colorWhite"
                         >
                         <ImageView
+                            android:visibility="gone"
 
                             android:id="@+id/messenger1"
                             android:layout_width="30dp"
@@ -86,7 +87,9 @@
 
                         <com.google.android.material.tabs.TabLayout
                             android:id="@+id/tabLayout2"
-                            app:tabTextColor="@color/blue"
+                            app:tabTextColor="@color/black"
+                            android:layout_marginRight="19dp"
+                            android:layout_marginLeft="19dp"
                             app:tabIndicatorColor="@color/blue"
                             android:layout_width="match_parent"
                             android:layout_height="40dp">
@@ -133,6 +136,7 @@
                     app:fab_addButtonPlusIconColor="@color/black"
                     app:fab_expandDirection="up"
                     app:fab_labelStyle="@style/LabelStyle"
+
                     app:fab_labelsPosition="left">
 
 
@@ -145,14 +149,7 @@
                         app:fab_size="mini"
                         app:fab_title="Photo and text" />
 
-                    <com.getbase.floatingactionbutton.FloatingActionButton
-                        android:id="@+id/togowrite"
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        app:fab_colorNormal="#fff"
-                        app:fab_icon="@drawable/ic_video_camera"
-                        app:fab_size="mini"
-                        app:fab_title="Video" />
+
 
 
                 </com.getbase.floatingactionbutton.FloatingActionsMenu>

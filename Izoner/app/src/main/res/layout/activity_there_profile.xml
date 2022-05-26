@@ -10,12 +10,11 @@
     <RelativeLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content">
+
         <RelativeLayout
             android:layout_width="match_parent"
             android:layout_height="180dp"
             android:background="@color/ic_launcher_background">
-
-
 
 
         </RelativeLayout>

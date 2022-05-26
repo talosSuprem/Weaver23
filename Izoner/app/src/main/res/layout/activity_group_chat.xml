@@ -4,7 +4,6 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-
     tools:context=".Adapter.GroupChatActivity">
     <androidx.appcompat.widget.Toolbar
         android:id="@+id/toolbar"
@@ -33,6 +32,15 @@
                 android:textSize="18sp"
                 android:textStyle="bold"/>
 
+            <ImageView
+                android:id="@+id/adduser"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentEnd="true"
+                android:visibility="visible"
+                android:layout_marginEnd="12dp"
+                android:src="@drawable/ic_outline_person_add_alt_24" />
+
 
 
 
@@ -41,6 +49,19 @@
 
 
     </androidx.appcompat.widget.Toolbar>
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/chatRv"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        app:stackFromEnd="true"
+        tools:listitem="@layout/row_groupchat_left"
+        android:layout_below="@+id/toolbar"
+        app:layoutManager="androidx.recyclerview.widget.LinearLayoutManager"
+        android:layout_above="@+id/chatLayout">
+
+
+    </androidx.recyclerview.widget.RecyclerView>
 
 
     <LinearLayout

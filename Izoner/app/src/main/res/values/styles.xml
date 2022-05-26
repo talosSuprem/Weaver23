@@ -14,7 +14,7 @@
         <item name="colorPrimary">@color/colorWhite</item>
         <item name="colorPrimaryDark">@color/black</item>
         <item name="colorAccent">#454142</item>
-        <item name="bgc">@color/black</item>
+        <item name="bgc">#2C2B2B</item>
         <item name="tc">@color/colorWhite</item>
     </style>
 

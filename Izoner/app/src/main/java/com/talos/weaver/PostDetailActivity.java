@@ -58,7 +58,7 @@ public class PostDetailActivity extends AppCompatActivity {
 
     ImageView uPictureIv, pImageIv;
     TextView uNameTv, pTimesTiv, pTitlesTv, pDescriptionTv, pLikesTv, pDislikesTv, pCommentsTv;
-    ImageButton moreBtn;
+    ImageButton moreBtn, returnBtn;
     Button likeBtn, dislikesBtn, shareBtn;
     LinearLayout profileLayout;
     RecyclerView recyclerView;
@@ -91,6 +91,7 @@ public class PostDetailActivity extends AppCompatActivity {
         moreBtn = findViewById(R.id.moreBtn);
         profileLayout = findViewById(R.id.profileLayout);
         likeBtn = findViewById(R.id.likeBtn);
+        returnBtn = findViewById(R.id.returnBtn);
         recyclerView = findViewById(R.id.recyclerView);
 
         commentEt = findViewById(R.id.commentEt);
@@ -102,6 +103,13 @@ public class PostDetailActivity extends AppCompatActivity {
             public void onClick(View v) {
                 showMoreOption();
 
+            }
+        });
+
+        returnBtn.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                onBackPressed();
             }
         });
 

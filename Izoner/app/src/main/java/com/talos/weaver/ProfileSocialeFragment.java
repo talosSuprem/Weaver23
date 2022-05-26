@@ -31,14 +31,17 @@ import android.view.View;
 import android.view.ViewGroup;
 import android.widget.Button;
 import android.widget.EditText;
+import android.widget.ImageButton;
 import android.widget.ImageView;
 import android.widget.LinearLayout;
 import android.widget.TextView;
 import android.widget.Toast;
 
+import com.bumptech.glide.Glide;
 import com.google.android.gms.tasks.OnFailureListener;
 import com.google.android.gms.tasks.OnSuccessListener;
 import com.google.android.gms.tasks.Task;
+import com.google.android.material.bottomsheet.BottomSheetDialog;
 import com.google.firebase.auth.FirebaseAuth;
 import com.google.firebase.auth.FirebaseUser;
 import com.google.firebase.database.ChildEventListener;
@@ -77,10 +80,11 @@ public class ProfileSocialeFragment extends Fragment {
     String storagePath = "Users_Profile_Cover_Imgs/";
 
     ImageView avatarIv, coverIv;
-    TextView nameTV, textTv, levelTv, joinedTv,bioTv;
+    TextView nameTV, textTv, levelTv, joinedTv,bioTv, titleName, levelUser;
     RecyclerView postsRecyclerView;
     EditText searchView;
-    Button fab, getPoint;
+    Button  getPoint;
+    ImageButton fab;
 
 
 
@@ -105,9 +109,6 @@ public class ProfileSocialeFragment extends Fragment {
     String[] storagePermissions;
 
 
-
-
-
     public ProfileSocialeFragment() {
         // Required empty public constructor
     }
@@ -119,10 +120,6 @@ public class ProfileSocialeFragment extends Fragment {
 
 
         View view = inflater.inflate(R.layout.fragment_profile_sociale, container, false);
-
-
-
-
 
 
         firebaseAuth = FirebaseAuth.getInstance();
@@ -143,9 +140,11 @@ public class ProfileSocialeFragment extends Fragment {
         levelTv = view.findViewById(R.id.levelTv);
         joinedTv = view.findViewById(R.id.joinedTv);
         bioTv = view.findViewById(R.id.bioTV);
-       searchView = view.findViewById(R.id.search);
+        titleName = view.findViewById(R.id.titleNameTv);
+        searchView = view.findViewById(R.id.search);
+        levelUser = view.findViewById(R.id.levelUserTv);
 
-       pd = new ProgressDialog(getActivity());
+        pd = new ProgressDialog(getActivity());
 
        /**
        searchView.setOnQueryTextListener(new SearchView.OnQueryTextListener() {
@@ -178,15 +177,6 @@ public class ProfileSocialeFragment extends Fragment {
 
 
 
-
-
-
-
-
-
-
-
-
         Query query = databaseReference.orderByChild("email").equalTo(user.getEmail());
         query.addValueEventListener(new ValueEventListener() {
             @Override
@@ -200,16 +190,21 @@ public class ProfileSocialeFragment extends Fragment {
                     String cover = ""+ds.child("cover").getValue();
                     String join = ""+ds.child("joined").getValue();
                     String bio1 = ""+ds.child("bio").getValue();
+                    String coin = ""+ds.child("compterPts").getValue();
+
 
                     nameTV.setText(name);
                     textTv.setText(txt);
                     levelTv.setText(level);
                     joinedTv.setText(join);
                     bioTv.setText(bio1);
+                    titleName.setText(name);
+                    levelUser.setText(coin);
 
 
 
                       try{
+                          //Glide.with(getActivity()).load(image).into(avatarIv);
                         Picasso.get().load(image).into(avatarIv);
                     }catch (Exception e){
                         Picasso.get().load(R.drawable.ic_person_24).into(avatarIv);
@@ -217,6 +212,7 @@ public class ProfileSocialeFragment extends Fragment {
                     try{
                         Picasso.get().load(cover).into(coverIv);
                     }catch (Exception e){
+                        Picasso.get().load(R.drawable.ic_person_24).into(coverIv);
 
                     }
 
@@ -279,6 +275,7 @@ public class ProfileSocialeFragment extends Fragment {
     private void showEditProfileDialog() {
 
         String options[] = {"Edit Profile Picture", "Edit Cover Photo", "Edit Name", "Edit Bio"};
+
         AlertDialog.Builder builder = new AlertDialog.Builder(getActivity());
         builder.setTitle("Edit your profile");
         builder.setIcon(R.drawable.ic_edit_black_24dp);
@@ -475,7 +472,9 @@ public class ProfileSocialeFragment extends Fragment {
 
         DatabaseReference ref = FirebaseDatabase.getInstance().getReference("Posts1");
 
-        Query query = ref.orderByChild("id").equalTo(uid);
+        user = FirebaseAuth.getInstance().getCurrentUser();
+
+        Query query = ref.orderByChild("uid").equalTo(uid);
         query.addValueEventListener(new ValueEventListener() {
             @Override
             public void onDataChange(@NonNull DataSnapshot snapshot) {

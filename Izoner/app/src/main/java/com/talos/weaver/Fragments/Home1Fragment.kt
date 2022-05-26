@@ -30,11 +30,13 @@ import com.google.firebase.auth.FirebaseUser
 import com.google.firebase.database.*
 import com.talos.weaver.*
 import com.talos.weaver.Adapter.AdapterPostsSocial
+
 import com.talos.weaver.Adapter.SectionPagerAdapter
 import com.talos.weaver.Model.ModelPost
 import com.talos.weaver.Model.Story
 import com.talos.weaver.Model.User
 import com.talos.weaver.R
+import com.talos.weaver.qalambook.QalamDashboardActivity
 import de.hdodenhof.circleimageview.CircleImageView
 
 class Home1Fragment : Fragment() {
@@ -68,7 +70,7 @@ class Home1Fragment : Fragment() {
 
     var name: TextView? = null
     private var recyclerView_story: RecyclerView? = null
-    private var storyAdapter: com.talos.weaver.Adapter.StoryAdapter? = null
+    //private var storyAdapter: com.talos.weaver.Adapter.StoryAdapter? = null
     private var storyList: MutableList<Story?>? = null
     private var followingList: MutableList<String?>? = null
     var firebaseUser: FirebaseUser? = null
@@ -90,11 +92,6 @@ class Home1Fragment : Fragment() {
         // Inflate the layout for this fragment
 
         myFragment = inflater.inflate(R.layout.fragment_home1, container, false)
-
-
-
-
-
 
 
         firebaseUser = FirebaseAuth.getInstance().currentUser
@@ -178,6 +175,11 @@ class Home1Fragment : Fragment() {
                         startActivity(intent)
                         Toast.makeText(activity, "Messages", Toast.LENGTH_SHORT).show()
                     }
+                    R.id.books -> {
+                        val intent = Intent(activity, QalamDashboardActivity::class.java)
+                        startActivity(intent)
+                        Toast.makeText(activity, "Books activities", Toast.LENGTH_SHORT).show()
+                    }
                     R.id.shorts -> {
                         val intent0 = Intent(activity, com.talos.weaver.ShortsActivity::class.java)
                         startActivity(intent0)
@@ -246,34 +248,17 @@ class Home1Fragment : Fragment() {
 
         progress_circular = myFragment!!.findViewById(R.id.progress_circular)
         floatingActionButton2 = myFragment!!.findViewById(R.id.togowrite)
-        floatingActionButton2!!.setOnClickListener(object : View.OnClickListener {
-            override fun onClick(v: View?) {
-                val intent = Intent(activity, PublishContentActivity::class.java)
-                startActivity(intent)
-                Toast.makeText(activity, "post a new text", Toast.LENGTH_LONG).show()
 
-            }
-        })
 
 
         floatingActionButton = myFragment!!.findViewById(R.id.togofoto)
         floatingActionButton!!.setOnClickListener(object : View.OnClickListener {
             override fun onClick(v: View) {
-                val intent = Intent(activity, AddPostSocialActivity::class.java)
+                val intent = Intent(activity,PostingNewActivity::class.java)
                 startActivity(intent)
-                Toast.makeText(activity, "post a new photo", Toast.LENGTH_LONG).show()
+                Toast.makeText(activity, "New post", Toast.LENGTH_LONG).show()
             }
         })
-
-
-
-
-
-
-
-
-
-
 
 
         viewPager = myFragment!!.findViewById(R.id.viewPager2)
