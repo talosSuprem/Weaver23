@@ -2,11 +2,10 @@ package com.talos.weaver;
 
 import android.widget.Filter;
 
-import com.talos.weaver.AdaptaterQalam.AdaptaterCategory;
-import com.talos.weaver.ModelQalam.ModelCategory;
+import com.talos.weaver.AdaptaterBook.AdaptaterCategory;
+import com.talos.weaver.ModelBook.ModelCategory;
 
 import java.util.ArrayList;
-import java.util.Locale;
 
 public class FilterCategory extends Filter {
 

@@ -5,7 +5,6 @@ import androidx.appcompat.app.AppCompatActivity;
 import androidx.recyclerview.widget.RecyclerView;
 
 
-import android.app.Activity;
 import android.content.Intent;
 import android.os.Bundle;
 import android.text.Editable;
@@ -25,9 +24,9 @@ import com.google.firebase.database.DatabaseReference;
 import com.google.firebase.database.FirebaseDatabase;
 import com.google.firebase.database.ValueEventListener;
 
-import com.talos.weaver.AdaptaterQalam.AdaptaterCategory;
+import com.talos.weaver.AdaptaterBook.AdaptaterCategory;
 import com.talos.weaver.MainActivity;
-import com.talos.weaver.ModelQalam.ModelCategory;
+import com.talos.weaver.ModelBook.ModelCategory;
 import com.talos.weaver.PdfAddActivity;
 import com.talos.weaver.R;
 

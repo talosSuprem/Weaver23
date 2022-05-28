@@ -31,7 +31,6 @@ import com.google.firebase.database.ValueEventListener;
 import com.google.firebase.storage.FirebaseStorage;
 import com.google.firebase.storage.StorageReference;
 import com.google.firebase.storage.UploadTask;
-import com.talos.weaver.ModelQalam.ModelCategory;
 
 import java.util.ArrayList;
 import java.util.HashMap;

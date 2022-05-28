@@ -66,7 +66,7 @@ class MainActivity : AppCompatActivity() {
                 R.id.nav_weave -> selectedfragment = Home1Fragment()
                 R.id.nav_notification -> selectedfragment = NotificationSocialFragment()
                 R.id.nav_search -> selectedfragment = UsersChatFragment()
-                R.id.nav_wallet -> selectedfragment = WalletFragment()
+                //R.id.nav_wallet -> selectedfragment = WalletFragment()
 
 
                 R.id.nav_profile -> {

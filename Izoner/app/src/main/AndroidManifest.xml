@@ -37,9 +37,6 @@
             android:name=".qalambook.QalamAdminActivity"
             android:exported="false" />
         <activity
-            android:name=".AddVideoPostActivity"
-            android:exported="false" />
-        <activity
             android:name=".GroupParticipantAddActivity"
             android:exported="false" />
         <activity
@@ -97,9 +94,6 @@
             android:name=".NotificationActivity"
             android:exported="false" />
         <activity
-            android:name=".PublishContentActivity"
-            android:exported="false" />
-        <activity
             android:name=".SplashActivity"
             android:exported="true">
             <intent-filter>
@@ -109,16 +103,10 @@
             </intent-filter>
         </activity>
         <activity
-            android:name=".AccountActivity"
-            android:exported="false" />
-        <activity
             android:name=".AddVideosActivity"
             android:exported="false" />
         <activity
             android:name=".ShortsActivity"
-            android:exported="false" />
-        <activity
-            android:name=".CryptubeActivity"
             android:exported="false" />
         <activity
             android:name=".MessageActivity"

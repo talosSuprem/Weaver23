@@ -34,13 +34,10 @@ import com.google.firebase.database.ValueEventListener;
 import com.google.firebase.storage.FirebaseStorage;
 import com.google.firebase.storage.StorageMetadata;
 import com.google.firebase.storage.StorageReference;
-import com.talos.weaver.AdaptaterQalam.AdaptaterCategory;
 import com.talos.weaver.FilterPdfAdmin;
-import com.talos.weaver.ModelQalam.ModelPdf;
+import com.talos.weaver.ModelBook.ModelPdf;
 import com.talos.weaver.MyApplication;
 import com.talos.weaver.R;
-
-import org.xmlpull.v1.XmlPullParser;
 
 import java.util.ArrayList;
 

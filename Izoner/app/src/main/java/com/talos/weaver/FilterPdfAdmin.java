@@ -2,10 +2,8 @@ package com.talos.weaver;
 
 import android.widget.Filter;
 
-import com.talos.weaver.AdaptaterQalam.AdaptaterCategory;
 import com.talos.weaver.Adapter.AdapterPdfAdmin;
-import com.talos.weaver.ModelQalam.ModelCategory;
-import com.talos.weaver.ModelQalam.ModelPdf;
+import com.talos.weaver.ModelBook.ModelPdf;
 
 import java.util.ArrayList;
 

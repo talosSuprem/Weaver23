@@ -190,16 +190,8 @@ class Home1Fragment : Fragment() {
                         startActivity(intent0)
                         Toast.makeText(activity, "News", Toast.LENGTH_SHORT).show()
                     }
-                    R.id.cryptube -> {
-                        val intent2 = Intent(activity, com.talos.weaver.CryptubeActivity::class.java)
-                        startActivity(intent2)
-                        Toast.makeText(activity, "Messages", Toast.LENGTH_SHORT).show()
-                    }
-                    R.id.trash -> {
-                        val `in` = Intent(activity, CoinsActivity::class.java)
-                        startActivity(`in`)
-                        Toast.makeText(activity, "coins info", Toast.LENGTH_SHORT).show()
-                    }
+
+
                     R.id.settings -> {
                         val `in` = Intent(activity, OptionsActivity::class.java)
                         startActivity(`in`)

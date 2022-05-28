@@ -4,7 +4,6 @@ import androidx.annotation.NonNull;
 import androidx.appcompat.app.AppCompatActivity;
 import androidx.recyclerview.widget.RecyclerView;
 
-import android.app.Activity;
 import android.content.Intent;
 import android.os.Bundle;
 import android.text.Editable;
@@ -20,7 +19,7 @@ import com.google.firebase.database.DatabaseReference;
 import com.google.firebase.database.FirebaseDatabase;
 import com.google.firebase.database.ValueEventListener;
 import com.talos.weaver.Adapter.AdapterPdfAdmin;
-import com.talos.weaver.ModelQalam.ModelPdf;
+import com.talos.weaver.ModelBook.ModelPdf;
 import com.talos.weaver.R;
 
 import java.util.ArrayList;

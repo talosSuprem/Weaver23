@@ -23,8 +23,13 @@
         <entry key="..\:/Users/tarek/Desktop/Izoner/app/src/main/res/drawable-v24/ic_arrow_upward_black_24dp.xml" value="0.1" />
         <entry key="..\:/Users/tarek/Desktop/Izoner/app/src/main/res/drawable-v24/ic_attachment_black_24dp.xml" value="0.1" />
         <entry key="..\:/Users/tarek/Desktop/Izoner/app/src/main/res/drawable-v24/ic_more_vert_black_24dp.xml" value="0.1" />
+        <entry key="..\:/Users/tarek/Desktop/Izoner/app/src/main/res/drawable-v24/ic_notifications_black_24dp.xml" value="0.1545" />
+        <entry key="..\:/Users/tarek/Desktop/Izoner/app/src/main/res/drawable-v24/ic_people_black_24dp.xml" value="0.1545" />
+        <entry key="..\:/Users/tarek/Desktop/Izoner/app/src/main/res/drawable-v24/ic_person_black_24dp.xml" value="0.1545" />
+        <entry key="..\:/Users/tarek/Desktop/Izoner/app/src/main/res/drawable-v24/ic_photo_camera_black_24dp.xml" value="0.1545" />
         <entry key="..\:/Users/tarek/Desktop/Izoner/app/src/main/res/drawable-v24/ic_round_edit_24.xml" value="0.1" />
         <entry key="..\:/Users/tarek/Desktop/Izoner/app/src/main/res/drawable-v24/ic_send_black_24dp.xml" value="0.1" />
+        <entry key="..\:/Users/tarek/Desktop/Izoner/app/src/main/res/drawable-v24/ic_share_black_24dp.xml" value="0.1545" />
         <entry key="..\:/Users/tarek/Desktop/Izoner/app/src/main/res/drawable-v24/ic_vpn_key_black_24dp.xml" value="0.188" />
         <entry key="..\:/Users/tarek/Desktop/Izoner/app/src/main/res/drawable/add_story.xml" value="0.19583333333333333" />
         <entry key="..\:/Users/tarek/Desktop/Izoner/app/src/main/res/drawable/bg_label.xml" value="0.19583333333333333" />
@@ -64,13 +69,19 @@
         <entry key="..\:/Users/tarek/Desktop/Izoner/app/src/main/res/drawable/ic_monetization.xml" value="0.1775" />
         <entry key="..\:/Users/tarek/Desktop/Izoner/app/src/main/res/drawable/ic_more.xml" value="0.1775" />
         <entry key="..\:/Users/tarek/Desktop/Izoner/app/src/main/res/drawable/ic_notifications_tube.xml" value="0.19583333333333333" />
+        <entry key="..\:/Users/tarek/Desktop/Izoner/app/src/main/res/drawable/ic_outline_info.xml" value="0.1545" />
+        <entry key="..\:/Users/tarek/Desktop/Izoner/app/src/main/res/drawable/ic_outline_person_add_alt_24.xml" value="0.1545" />
+        <entry key="..\:/Users/tarek/Desktop/Izoner/app/src/main/res/drawable/ic_pen_mode_edit.xml" value="0.1545" />
+        <entry key="..\:/Users/tarek/Desktop/Izoner/app/src/main/res/drawable/ic_person_24.xml" value="0.1545" />
         <entry key="..\:/Users/tarek/Desktop/Izoner/app/src/main/res/drawable/ic_round_add_a_photo_24.xml" value="0.1775" />
         <entry key="..\:/Users/tarek/Desktop/Izoner/app/src/main/res/drawable/ic_round_arrow_back_ios_new_24.xml" value="0.1" />
         <entry key="..\:/Users/tarek/Desktop/Izoner/app/src/main/res/drawable/ic_round_arrow_circle_down_24.xml" value="0.19583333333333333" />
         <entry key="..\:/Users/tarek/Desktop/Izoner/app/src/main/res/drawable/ic_round_arrow_downward_24.xml" value="0.1" />
         <entry key="..\:/Users/tarek/Desktop/Izoner/app/src/main/res/drawable/ic_round_arrow_like.xml" value="0.19583333333333333" />
         <entry key="..\:/Users/tarek/Desktop/Izoner/app/src/main/res/drawable/ic_round_attach_file_24.xml" value="0.1" />
+        <entry key="..\:/Users/tarek/Desktop/Izoner/app/src/main/res/drawable/ic_round_favorite_border_24.xml" value="0.1545" />
         <entry key="..\:/Users/tarek/Desktop/Izoner/app/src/main/res/drawable/ic_round_group_add_24.xml" value="0.1" />
+        <entry key="..\:/Users/tarek/Desktop/Izoner/app/src/main/res/drawable/ic_round_history_24.xml" value="0.1545" />
         <entry key="..\:/Users/tarek/Desktop/Izoner/app/src/main/res/drawable/ic_round_home_bar.xml" value="0.1" />
         <entry key="..\:/Users/tarek/Desktop/Izoner/app/src/main/res/drawable/ic_round_message_24.xml" value="0.1745" />
         <entry key="..\:/Users/tarek/Desktop/Izoner/app/src/main/res/drawable/ic_round_monetization_bar.xml" value="0.1" />
@@ -81,7 +92,9 @@
         <entry key="..\:/Users/tarek/Desktop/Izoner/app/src/main/res/drawable/ic_round_videocam_24.xml" value="0.1" />
         <entry key="..\:/Users/tarek/Desktop/Izoner/app/src/main/res/drawable/ic_round_watch_later_24.xml" value="0.1" />
         <entry key="..\:/Users/tarek/Desktop/Izoner/app/src/main/res/drawable/ic_save_alt.xml" value="0.1" />
+        <entry key="..\:/Users/tarek/Desktop/Izoner/app/src/main/res/drawable/ic_save_alt_red.xml" value="0.1545" />
         <entry key="..\:/Users/tarek/Desktop/Izoner/app/src/main/res/drawable/ic_search.xml" value="0.1775" />
+        <entry key="..\:/Users/tarek/Desktop/Izoner/app/src/main/res/drawable/ic_search_black_24dp.xml" value="0.1545" />
         <entry key="..\:/Users/tarek/Desktop/Izoner/app/src/main/res/drawable/ic_settings.xml" value="0.19583333333333333" />
         <entry key="..\:/Users/tarek/Desktop/Izoner/app/src/main/res/drawable/ic_share.xml" value="0.19583333333333333" />
         <entry key="..\:/Users/tarek/Desktop/Izoner/app/src/main/res/drawable/ic_thumb_down.xml" value="0.19583333333333333" />
@@ -157,14 +170,17 @@
         <entry key="..\:/Users/tarek/Desktop/Izoner/app/src/main/res/layout/activity_writer.xml" value="0.1796875" />
         <entry key="..\:/Users/tarek/Desktop/Izoner/app/src/main/res/layout/add_story_item.xml" value="0.19166666666666668" />
         <entry key="..\:/Users/tarek/Desktop/Izoner/app/src/main/res/layout/bar_layout.xml" value="0.11875" />
-        <entry key="..\:/Users/tarek/Desktop/Izoner/app/src/main/res/layout/channel_dialog.xml" value="0.1" />
+        <entry key="..\:/Users/tarek/Desktop/Izoner/app/src/main/res/layout/channel_dialog.xml" value="0.22" />
         <entry key="..\:/Users/tarek/Desktop/Izoner/app/src/main/res/layout/chat_item_left.xml" value="0.1796875" />
         <entry key="..\:/Users/tarek/Desktop/Izoner/app/src/main/res/layout/chat_item_right.xml" value="0.1796875" />
         <entry key="..\:/Users/tarek/Desktop/Izoner/app/src/main/res/layout/custom_exoplayer.xml" value="0.1796875" />
         <entry key="..\:/Users/tarek/Desktop/Izoner/app/src/main/res/layout/dashboard_about_tube.xml" value="0.1" />
         <entry key="..\:/Users/tarek/Desktop/Izoner/app/src/main/res/layout/dashboard_home_tube.xml" value="0.1" />
+        <entry key="..\:/Users/tarek/Desktop/Izoner/app/src/main/res/layout/dashboard_playlist_tube.xml" value="0.1796875" />
         <entry key="..\:/Users/tarek/Desktop/Izoner/app/src/main/res/layout/dashboard_subscriptions_tube.xml" value="0.1" />
         <entry key="..\:/Users/tarek/Desktop/Izoner/app/src/main/res/layout/dashboard_videos_tube.xml" value="0.1" />
+        <entry key="..\:/Users/tarek/Desktop/Izoner/app/src/main/res/layout/fotos_item.xml" value="0.1796875" />
+        <entry key="..\:/Users/tarek/Desktop/Izoner/app/src/main/res/layout/fragment_blank.xml" value="0.1796875" />
         <entry key="..\:/Users/tarek/Desktop/Izoner/app/src/main/res/layout/fragment_channel_dashboard.xml" value="0.4466666666666667" />
         <entry key="..\:/Users/tarek/Desktop/Izoner/app/src/main/res/layout/fragment_chat_list.xml" value="0.1" />
         <entry key="..\:/Users/tarek/Desktop/Izoner/app/src/main/res/layout/fragment_chats.xml" value="0.1140625" />
@@ -197,6 +213,7 @@
         <entry key="..\:/Users/tarek/Desktop/Izoner/app/src/main/res/layout/fragment_users.xml" value="0.1640625" />
         <entry key="..\:/Users/tarek/Desktop/Izoner/app/src/main/res/layout/fragment_users_chat.xml" value="0.1140625" />
         <entry key="..\:/Users/tarek/Desktop/Izoner/app/src/main/res/layout/fragment_userschat.xml" value="0.1796875" />
+        <entry key="..\:/Users/tarek/Desktop/Izoner/app/src/main/res/layout/fragment_userss.xml" value="0.1796875" />
         <entry key="..\:/Users/tarek/Desktop/Izoner/app/src/main/res/layout/fragment_wallet.xml" value="0.22" />
         <entry key="..\:/Users/tarek/Desktop/Izoner/app/src/main/res/layout/fragment_weaves.xml" value="0.14666666666666667" />
         <entry key="..\:/Users/tarek/Desktop/Izoner/app/src/main/res/layout/item_signin_dialog.xml" value="0.3333333333333333" />
