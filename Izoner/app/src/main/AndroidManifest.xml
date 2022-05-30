@@ -22,19 +22,19 @@
             android:name=".PostActivity"
             android:exported="false" />
         <activity
-            android:name=".qalambook.PdfListAdminActivity"
+            android:name=".activitybook.PdfListAdminActivity"
             android:exported="false" />
         <activity
             android:name=".PdfAddActivity"
             android:exported="false" />
         <activity
-            android:name=".qalambook.QalamDashboardActivity"
+            android:name=".activitybook.QalamDashboardActivity"
             android:exported="false" />
         <activity
-            android:name=".qalambook.CategoriesAddActivity"
+            android:name=".activitybook.CategoriesAddActivity"
             android:exported="false" />
         <activity
-            android:name=".qalambook.QalamAdminActivity"
+            android:name=".activitybook.QalamAdminActivity"
             android:exported="false" />
         <activity
             android:name=".GroupParticipantAddActivity"

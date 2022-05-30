@@ -23,7 +23,7 @@ import com.google.firebase.database.FirebaseDatabase;
 import com.talos.weaver.FilterCategory;
 import com.talos.weaver.ModelBook.ModelCategory;
 import com.talos.weaver.R;
-import com.talos.weaver.qalambook.PdfListAdminActivity;
+import com.talos.weaver.activitybook.PdfListAdminActivity;
 
 
 import java.util.ArrayList;

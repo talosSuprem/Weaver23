@@ -36,7 +36,7 @@ import com.talos.weaver.Model.ModelPost
 import com.talos.weaver.Model.Story
 import com.talos.weaver.Model.User
 import com.talos.weaver.R
-import com.talos.weaver.qalambook.QalamDashboardActivity
+import com.talos.weaver.activitybook.QalamDashboardActivity
 import de.hdodenhof.circleimageview.CircleImageView
 
 class Home1Fragment : Fragment() {

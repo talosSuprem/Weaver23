@@ -279,7 +279,7 @@
                             android:layout_height="wrap_content"
                             android:layout_weight="1"
                             android:background="@null"
-                            android:drawableStart="@drawable/ic_share_black_24dp"
+                            android:drawableStart="@drawable/ic_twotone_share_24"
                             android:paddingHorizontal="5dp"
                             android:text="@string/share"
                             android:textSize="8dp" />
@@ -355,7 +355,7 @@
             android:layout_marginLeft="5dp"
             android:layout_marginRight="15dp"
             android:background="@null"
-            android:src="@drawable/ic_arrow_upward_black_24dp" />
+            android:src="@drawable/arrowup" />
 
 
     </RelativeLayout>

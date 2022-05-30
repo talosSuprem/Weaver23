@@ -7,6 +7,7 @@
         <entry key="..\:/Users/tarek/Desktop/Izoner/app/src/main/res/drawable-v21/buttonlike.xml" value="0.19583333333333333" />
         <entry key="..\:/Users/tarek/Desktop/Izoner/app/src/main/res/drawable-v21/buttonlike2.xml" value="0.19583333333333333" />
         <entry key="..\:/Users/tarek/Desktop/Izoner/app/src/main/res/drawable-v21/cust_infocase4.xml" value="0.19583333333333333" />
+        <entry key="..\:/Users/tarek/Desktop/Izoner/app/src/main/res/drawable-v21/edittext.xml" value="0.1545" />
         <entry key="..\:/Users/tarek/Desktop/Izoner/app/src/main/res/drawable-v21/ripple_effect.xml" value="0.1685185185185185" />
         <entry key="..\:/Users/tarek/Desktop/Izoner/app/src/main/res/drawable-v24/background_left.xml" value="0.1925925925925926" />
         <entry key="..\:/Users/tarek/Desktop/Izoner/app/src/main/res/drawable-v24/background_right.xml" value="0.1925925925925926" />
@@ -19,9 +20,22 @@
         <entry key="..\:/Users/tarek/Desktop/Izoner/app/src/main/res/drawable-v24/bg_text_chat_right.xml" value="0.19583333333333333" />
         <entry key="..\:/Users/tarek/Desktop/Izoner/app/src/main/res/drawable-v24/circle_bg_white.xml" value="0.19583333333333333" />
         <entry key="..\:/Users/tarek/Desktop/Izoner/app/src/main/res/drawable-v24/cust_button.xml" value="0.19583333333333333" />
+        <entry key="..\:/Users/tarek/Desktop/Izoner/app/src/main/res/drawable-v24/editextstyle.xml" value="0.1545" />
+        <entry key="..\:/Users/tarek/Desktop/Izoner/app/src/main/res/drawable-v24/ic_add_circle_outline_black_24dp.xml" value="0.1545" />
+        <entry key="..\:/Users/tarek/Desktop/Izoner/app/src/main/res/drawable-v24/ic_arrow_back_black_24dp.xml" value="0.1545" />
         <entry key="..\:/Users/tarek/Desktop/Izoner/app/src/main/res/drawable-v24/ic_arrow_downward_black_24dp.xml" value="0.1" />
         <entry key="..\:/Users/tarek/Desktop/Izoner/app/src/main/res/drawable-v24/ic_arrow_upward_black_24dp.xml" value="0.1" />
         <entry key="..\:/Users/tarek/Desktop/Izoner/app/src/main/res/drawable-v24/ic_attachment_black_24dp.xml" value="0.1" />
+        <entry key="..\:/Users/tarek/Desktop/Izoner/app/src/main/res/drawable-v24/ic_baseline_block_24.xml" value="0.1545" />
+        <entry key="..\:/Users/tarek/Desktop/Izoner/app/src/main/res/drawable-v24/ic_baseline_crop_24.xml" value="0.1545" />
+        <entry key="..\:/Users/tarek/Desktop/Izoner/app/src/main/res/drawable-v24/ic_baseline_help_24.xml" value="0.1545" />
+        <entry key="..\:/Users/tarek/Desktop/Izoner/app/src/main/res/drawable-v24/ic_baseline_lock_24.xml" value="0.1545" />
+        <entry key="..\:/Users/tarek/Desktop/Izoner/app/src/main/res/drawable-v24/ic_baseline_pause_circle_filled_24.xml" value="0.1545" />
+        <entry key="..\:/Users/tarek/Desktop/Izoner/app/src/main/res/drawable-v24/ic_baseline_photo_24.xml" value="0.1545" />
+        <entry key="..\:/Users/tarek/Desktop/Izoner/app/src/main/res/drawable-v24/ic_baseline_play_circle_filled_24.xml" value="0.1545" />
+        <entry key="..\:/Users/tarek/Desktop/Izoner/app/src/main/res/drawable-v24/ic_baseline_remove_red_eye_24.xml" value="0.1545" />
+        <entry key="..\:/Users/tarek/Desktop/Izoner/app/src/main/res/drawable-v24/ic_baseline_text_fields_24.xml" value="0.1545" />
+        <entry key="..\:/Users/tarek/Desktop/Izoner/app/src/main/res/drawable-v24/ic_edit_black_24dp.xml" value="0.1545" />
         <entry key="..\:/Users/tarek/Desktop/Izoner/app/src/main/res/drawable-v24/ic_more_vert_black_24dp.xml" value="0.1" />
         <entry key="..\:/Users/tarek/Desktop/Izoner/app/src/main/res/drawable-v24/ic_notifications_black_24dp.xml" value="0.1545" />
         <entry key="..\:/Users/tarek/Desktop/Izoner/app/src/main/res/drawable-v24/ic_people_black_24dp.xml" value="0.1545" />
@@ -58,13 +72,26 @@
         <entry key="..\:/Users/tarek/Desktop/Izoner/app/src/main/res/drawable/ic_arrow_circle_up.xml" value="0.188" />
         <entry key="..\:/Users/tarek/Desktop/Izoner/app/src/main/res/drawable/ic_arrow_down.xml" value="0.188" />
         <entry key="..\:/Users/tarek/Desktop/Izoner/app/src/main/res/drawable/ic_baseline_autorenew.xml" value="0.19583333333333333" />
+        <entry key="..\:/Users/tarek/Desktop/Izoner/app/src/main/res/drawable/ic_baseline_category_24.xml" value="0.1545" />
         <entry key="..\:/Users/tarek/Desktop/Izoner/app/src/main/res/drawable/ic_baseline_comment_24.xml" value="0.19583333333333333" />
+        <entry key="..\:/Users/tarek/Desktop/Izoner/app/src/main/res/drawable/ic_baseline_delete_forever_24.xml" value="0.1545" />
+        <entry key="..\:/Users/tarek/Desktop/Izoner/app/src/main/res/drawable/ic_baseline_description_24.xml" value="0.1545" />
         <entry key="..\:/Users/tarek/Desktop/Izoner/app/src/main/res/drawable/ic_baseline_explore_24.xml" value="0.1" />
         <entry key="..\:/Users/tarek/Desktop/Izoner/app/src/main/res/drawable/ic_baseline_exposure_neg_2_24.xml" value="0.1" />
         <entry key="..\:/Users/tarek/Desktop/Izoner/app/src/main/res/drawable/ic_baseline_groups_24.xml" value="0.1245" />
+        <entry key="..\:/Users/tarek/Desktop/Izoner/app/src/main/res/drawable/ic_baseline_keyboard_arrow_down_24.xml" value="0.1545" />
+        <entry key="..\:/Users/tarek/Desktop/Izoner/app/src/main/res/drawable/ic_baseline_library_add_24.xml" value="0.1545" />
+        <entry key="..\:/Users/tarek/Desktop/Izoner/app/src/main/res/drawable/ic_baseline_menu_book_24.xml" value="0.1545" />
+        <entry key="..\:/Users/tarek/Desktop/Izoner/app/src/main/res/drawable/ic_baseline_picture_as_pdf_24.xml" value="0.1545" />
+        <entry key="..\:/Users/tarek/Desktop/Izoner/app/src/main/res/drawable/ic_baseline_report_24.xml" value="0.1545" />
+        <entry key="..\:/Users/tarek/Desktop/Izoner/app/src/main/res/drawable/ic_baseline_rule_24.xml" value="0.1545" />
+        <entry key="..\:/Users/tarek/Desktop/Izoner/app/src/main/res/drawable/ic_baseline_trending_down_24.xml" value="0.1545" />
+        <entry key="..\:/Users/tarek/Desktop/Izoner/app/src/main/res/drawable/ic_baseline_trending_up_24.xml" value="0.1545" />
         <entry key="..\:/Users/tarek/Desktop/Izoner/app/src/main/res/drawable/ic_cryptube_icon.xml" value="0.19583333333333333" />
+        <entry key="..\:/Users/tarek/Desktop/Izoner/app/src/main/res/drawable/ic_dot_24dp.xml" value="0.1545" />
         <entry key="..\:/Users/tarek/Desktop/Izoner/app/src/main/res/drawable/ic_exposure_neg_1_24.xml" value="0.19583333333333333" />
         <entry key="..\:/Users/tarek/Desktop/Izoner/app/src/main/res/drawable/ic_exposure_plus_1_24.xml" value="0.19583333333333333" />
+        <entry key="..\:/Users/tarek/Desktop/Izoner/app/src/main/res/drawable/ic_fire.xml" value="0.1545" />
         <entry key="..\:/Users/tarek/Desktop/Izoner/app/src/main/res/drawable/ic_menu_home.xml" value="0.18888888888888888" />
         <entry key="..\:/Users/tarek/Desktop/Izoner/app/src/main/res/drawable/ic_monetization.xml" value="0.1775" />
         <entry key="..\:/Users/tarek/Desktop/Izoner/app/src/main/res/drawable/ic_more.xml" value="0.1775" />
@@ -246,7 +273,7 @@
         <entry key="..\:/Users/tarek/Desktop/Izoner/app/src/main/res/layout/userchat_item.xml" value="0.1796875" />
         <entry key="..\:/Users/tarek/Desktop/Izoner/app/src/main/res/layout/userr_item.xml" value="0.1796875" />
         <entry key="..\:/Users/tarek/Desktop/Izoner/app/src/main/res/layout/writerpost_item.xml" value="0.1796875" />
-        <entry key="..\:/Users/tarek/Desktop/Izoner/app/src/main/res/menu/bottom_navigation.xml" value="0.1" />
+        <entry key="..\:/Users/tarek/Desktop/Izoner/app/src/main/res/menu/bottom_navigation.xml" value="0.22" />
         <entry key="..\:/Users/tarek/Desktop/Izoner/app/src/main/res/menu/btm_cryptotube.xml" value="0.1796875" />
         <entry key="..\:/Users/tarek/Desktop/Izoner/app/src/main/res/menu/menu_social.xml" value="0.1796875" />
         <entry key="..\:/Users/tarek/Desktop/Izoner/app/src/main/res/menu/menuchat.xml" value="0.1796875" />

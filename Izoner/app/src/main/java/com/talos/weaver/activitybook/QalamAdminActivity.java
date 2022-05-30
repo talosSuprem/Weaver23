@@ -1,4 +1,4 @@
-package com.talos.weaver.qalambook;
+package com.talos.weaver.activitybook;
 
 import androidx.appcompat.app.AppCompatActivity;
 

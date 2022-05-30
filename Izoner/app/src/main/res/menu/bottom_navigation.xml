@@ -11,7 +11,7 @@
 
     <item
         android:id="@+id/nav_wallet"
-        android:icon="@drawable/ic_round_monetization_bar"
+        android:icon="@drawable/ic_person_24"
         android:title="Wallets"
         android:visible="false"
         />

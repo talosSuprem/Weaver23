@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
-    <string name="app_name">DeepTalk</string>
+    <string name="app_name">Deepster</string>
     <string name="new_post">Nouveau post</string>
     <string name="edit_your_profile">Editer votre profil</string>
     <string name="log_in">Connection</string>
