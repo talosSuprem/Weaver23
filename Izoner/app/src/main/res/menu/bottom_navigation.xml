@@ -25,6 +25,11 @@
         android:title="Scrollers"/>
 
     <item
+        android:id="@+id/messagerie"
+        android:icon="@drawable/ic_chat_black_24dp"
+        android:title="chat"/>
+
+    <item
         android:id="@+id/nav_profile"
         android:icon="@drawable/ic_profile"
         android:title="Profile"/>

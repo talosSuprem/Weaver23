@@ -21,7 +21,7 @@
 
         android:layout_width="wrap_content"
         android:layout_height="38dp"
-        android:text="Weaver"
+        android:text="Deepster"
         android:textColor="@color/colorBlack"
         android:textSize="20sp" />
 
@@ -48,15 +48,15 @@
         android:maxLines="1"
         android:padding="10dp"/>
 
+
     <Button
+        android:id="@+id/login"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_marginTop="15dp"
+        android:background="@drawable/cust_compter"
         android:text="@string/log_in"
-        android:id="@+id/login"
-        android:textColor="@color/colorBlack"
-        android:background="@drawable/cust_compter"/>
-
+        android:textColor="@color/colorBlack" />
 
     <com.google.android.gms.common.SignInButton
         android:layout_marginTop="10dp"

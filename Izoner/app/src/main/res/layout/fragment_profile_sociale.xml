@@ -153,10 +153,10 @@
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:layout_below="@id/textTv"
-                        android:layout_marginTop="35dp"
-                        android:layout_alignParentRight="true"
-                        android:layout_marginRight="120dp"
                         android:layout_alignRight="@id/fab"
+                        android:layout_alignParentRight="true"
+                        android:layout_marginTop="35dp"
+                        android:layout_marginRight="120dp"
                         android:orientation="vertical"
 
 
@@ -167,12 +167,13 @@
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
                             android:text="Abonnements" />
+
                         <TextView
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
-                            android:text="100"
+                            android:layout_below="@id/abo1"
                             android:layout_centerHorizontal="true"
-                            android:layout_below="@id/abo1"/>
+                            android:text="100" />
 
 
                     </RelativeLayout>
@@ -181,26 +182,27 @@
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:layout_below="@id/textTv"
-                        android:layout_marginTop="35dp"
-                        android:layout_alignParentRight="true"
-                        android:layout_marginRight="50dp"
                         android:layout_alignRight="@id/fab"
+                        android:layout_alignParentRight="true"
+                        android:layout_marginTop="35dp"
+                        android:layout_marginRight="50dp"
                         android:orientation="vertical"
 
 
-                       >
+                        >
 
                         <TextView
                             android:id="@+id/abo"
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
                             android:text="Abonnés" />
+
                         <TextView
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
-                            android:text="100"
+                            android:layout_below="@id/abo"
                             android:layout_centerHorizontal="true"
-                            android:layout_below="@id/abo"/>
+                            android:text="100" />
 
 
                     </RelativeLayout>
